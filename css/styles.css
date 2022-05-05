@@ -1,0 +1,459 @@
+body {
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.1em;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* NAVEGACIÓN */
+header {
+    background: #fff;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0 2em;
+}
+
+.header__logo {
+    display: flex;
+    height: 30px;
+}
+
+.header__nav ul li {
+    font-weight: 600;
+    padding-right: 2em;
+    display: inline-block;
+}
+
+.header__nav ul li a:hover {
+    display: block;
+    transform: translateY(-3px) scale(1.05);
+    transition: .2s;
+}
+
+hr {
+    border: 1px transparent #000;
+    margin: 0 2em;
+}
+
+/* LOGO Y TÍTULO */
+.main__img {
+    display: inline-block;
+    margin: 2em 0 0 2em;
+    margin-top: 2em;
+}
+
+.main__titulo {
+    display: block;
+    font-size: 5em;
+    position: relative;
+    left: 3em;
+    bottom: 1.5em;
+    margin: 0;
+}
+
+/* NOTICIAS */
+.noticias {
+    color: #fff;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.noticias__contenido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    max-width: 1200px;
+    padding: 2em;
+    margin: auto;
+}
+
+.noticias__noticia {
+    color: #000;
+    background: #fff;
+    width: 14em;
+    transition: .2s;
+    box-shadow: 0 1px 4px 1px #fff;
+    overflow: hidden;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.noticias__noticia:hover {
+    transform: translateY(-4px);
+}
+
+.noticia__cuerpo {
+    padding: 15px;
+    text-align: center;
+}
+
+.noticias__cuerpo h3 {
+    margin-bottom: 20px;
+}
+
+.noticia__cuerpo p {
+    line-height: 1.5;
+    
+}
+
+/* Main - Historia del Taekwondo */
+.historiaDelTkd {
+    margin: 2em 2em;
+    text-align: justify;
+}
+
+.historiaDelTkd a {
+    color: #3b5999;
+}
+
+/* Teoría del Taekwondo */
+.all {
+    margin-bottom: 2em;
+}
+
+.teoria {
+    font-size: 18px;
+    text-align: justify;
+    display: block;
+    margin: 1em 2em 0 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c0b8b8;
+}
+
+.titulo {
+    background: #2f3640;
+    color:#fff;
+    padding: 5px;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.teoria ul li, .teoria ol li {
+    margin-left: 1.5em;
+}
+
+/* Bibliografía del General Choi */
+.general-main {
+    font-size: 1em;
+    text-align: justify;
+    margin: 1em 10em 2em 10em;
+}
+
+.general-choi h1 {
+    color: #fff;
+    text-align: center;
+    background: #c0b8b8;
+}
+
+.general-main p {
+    margin: 1em;
+}
+
+.general-choi img {
+    float: left;
+    height: 20em;
+    width: 15em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+}
+
+.general-choi span {
+    font-size: .8rem;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+}
+
+/* Iniciar Sesión */
+.ingresar {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border: 1px solid #000;
+}
+
+.ingresar__img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.ingresar h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.ingresar label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.ingresar input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ingresar input[type="text"], .ingresar input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.ingresar input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.ingresar input[type="submit"]:hover {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+}
+
+.ingresar a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+
+.ingresar a:hover {
+    color: rgb(73, 66, 66);
+}
+
+/* Crear Cuenta */
+.crear-cuenta {
+    width: 90%;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px 430px 30px;
+    border: 1px solid #000;
+}
+
+.ingresar__img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.crear-cuenta h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.crear-cuenta label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.crear-cuenta input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.crear-cuenta input[type="text"], .crear-cuenta input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.crear-cuenta input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.crear-cuenta input[type="submit"]:hover {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+}
+
+.crear-cuenta a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+
+.crear-cuenta a:hover {
+    color: rgb(73, 66, 66);
+}
+
+/* Footer */
+footer {
+    background-color: #2f3640;
+    border: 0;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+/* Redes Sociales */
+.footer__nav {
+    margin: 10px 200px 0 40px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    float: left
+}
+
+.footer__nav ul li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.footer__nav ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.footer__nav ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, .4);
+}
+
+.footer__nav ul li .footer__nav-facebook:hover {
+    background: #3b5999;
+}
+
+.footer__nav ul li .footer__nav-twitter:hover {
+    background: #55acee;
+}
+
+.footer__nav ul li .footer__nav-instagram:hover {
+    background: #e4405f;
+}
+
+.footer__nav-facebook {
+    color: #3b5999;
+}
+
+.footer__nav-twitter {
+    color: #55acee;
+}
+
+.footer__nav-instagram {
+    color: #e4405f;
+}
+
+/* Contacto */
+.footer_contacto {
+    text-decoration: none;
+    margin-left: 700px;
+    margin-bottom: 1em;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_contacto a:hover {
+    color: #e4405f;
+    display: inline-block;
+    transition: .2s;
+    transform: translateY(1px) scale(1.05);
+}
+
+/* Copyright */
+.footer__copyright {
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    margin: auto;
+    font-size: .8em;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .noticias__contenido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .main__titulo {
+        font-size: larger;
+        padding-top: 2em;
+        text-align: center;
+    }
+
+    .noticias__contenido {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+
+
+
+
