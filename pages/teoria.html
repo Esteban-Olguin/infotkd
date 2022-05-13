@@ -9,7 +9,7 @@
         <!-- Fuentes -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/84d1de6f8d.js" crossorigin="anonymous"></script>
         <!-- CSS -->
         <link rel="stylesheet" href="../css/styles.css">
@@ -17,23 +17,24 @@
     </head>
 <body>
     <header class="header">
-        <!-- Navegación -->
+        <!-- LOGO -->
         <div class="header__logo">
             <a href="../index.html"><img src="../resources/logos/favicon-32x32.png" rel="logo"></a>
         </div>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html#noticias">Noticias</a></li>
-                <li><a href="../index.html#historiaDelTkd">Historia del Taekwondo</a></li>
-                <li><a href="../pages/teoria.html">Teoría del Taekwondo</a></li>
-                <li><a href="../pages/general_choi.html">General Choi</a></li>
-                <li><a href="../pages/acceder.html">Acceder</a></li>
+        <nav class="nav">
+            <!-- NAVEGACIÓN PRINCIPAL -->
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="../index.html">Inicio</a></li>
+                <li class="nav__li"><a href="../index.html#noticias">Noticias</a></li>
+                <li class="nav__li"><a href="../index.html#historiaDelTkd">Historia del Taekwondo</a></li>
+                <li class="nav__li"><a href="../pages/teoria.html">Teoría del Taekwondo</a></li>
+                <li class="nav__li"><a href="../pages/general_choi.html">General Choi</a></li>
+                <li class="nav__li"><a href="../pages/acceder.html">Acceder</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <main>
-        <section class="all">
+        <section class="teoriaDelTkd">
             <div  class="teoria" class="definicion">
                 <h2 class="titulo" >Definición:</h2>
                     <p>Es la utilización científica del cuerpo en el método de autodefensa. Un cuerpo que ha adquirido el máximo de su rendimiento a través de un entrenamiento, tanto físico como mental. Es un arte de defensa personal.</p>
@@ -383,28 +384,38 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <nav class="footer__nav">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100006445125265" class="footer__nav-facebook"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/emi_olguin_" class="footer__nav-twitter"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/emi_olguin_/?hl=es" class="footer__nav-instagram"><i class="fa-brands fa-instagram"></i><a></a>
-                </li>
-            </ul>
-        </nav>
-        <di class="footer_contacto">
-            <p>¿Tenés dudas?¡Contactanos!</p>
+        <div class="footer__grid-item footer__acercaDe" >
+            <h3>Sobre esta página</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit similique accusantium aut eligendi! Quidem impedit corrupti facere fuga corporis, adipisci deserunt voluptate, tempora, exercitationem odit sequi laudantium sunt quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corrupti minima totam possimus, molestiae iusto commodi nam, et rem repudiandae quod qui, laborum quaerat quas esse nisi tempora earum. Tempore.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nostrum voluptates sapiente deserunt? Aliquam est ex molestiae, inventore quae tenetur consequuntur excepturi facere error sapiente animi vitae vero minima adipisci.</p>
+        </div>
+        <div class="footer__grid-item">
+            <div class="footer__contacto" >
+            <p>¿Tenés dudas? ¡Contactanos!</p>
             <p>Teléfono: +54 343-4596964</p>
             <p>Correo:</p><a href="#">correodeejemplo@gmail.com</a>
-        </di>
-        <hr class="footer_hr">
-        <p class="footer__copyright">
-            Infotkd.com | Todos los derechos reservados.
-        </p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100006445125265" class="footer__nav-facebook"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/emi_olguin_" class="footer__nav-twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/emi_olguin_/?hl=es" class="footer__nav-instagram"><i class="fa-brands fa-instagram"></i><a></a>
+                    </li>
+                </ul>                    
+            </nav>
+        </div>
+        <div class="footer__grid-item footer__copyright">
+            <hr>
+            <p>
+                &copy; 2022 | Infotkd.com | Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
 </body>
 </html>

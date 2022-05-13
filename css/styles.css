@@ -1,6 +1,6 @@
 body {
-    font-family: 'Akshar', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     background-color: #fff;
     font-weight: 400;
 }
@@ -26,15 +26,16 @@ header {
     height: 30px;
 }
 
-.header__nav ul li {
+.nav__ul li {
     font-weight: 600;
     padding-right: 2em;
     display: inline-block;
 }
 
-.header__nav ul li a:hover {
+.nav__li a:hover {
+    color: #477CE0;
     display: block;
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-4px);
     transition: .2s;
 }
 
@@ -44,124 +45,127 @@ hr {
 }
 
 /* LOGO Y TÍTULO */
-.main__img {
-    display: inline-block;
-    margin: 2em 0 0 2em;
-    margin-top: 2em;
-}
-
-.main__titulo {
-    display: block;
-    font-size: 5em;
-    position: relative;
-    left: 3em;
-    bottom: 1.5em;
-    margin: 0;
+.titulo__grid-container {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
 }
 
 /* NOTICIAS */
 .noticias {
     color: #fff;
-    background: #000;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
+    background: #477CE0;
 }
 
-.noticias__contenido {
+.noticias h2 {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.noticias__grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
-    max-width: 1200px;
-    padding: 2em;
-    margin: auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 2em 4em 2em 4em;
 }
 
-.noticias__noticia {
+.grid-item--destacada {
+    grid-column: 2 / 4;
     color: #000;
-    background: #fff;
-    width: 14em;
+    background: #ffffff;
     transition: .2s;
-    box-shadow: 0 1px 4px 1px #fff;
     overflow: hidden;
-    transition: .2s;
     cursor: pointer;
+    justify-content: center;
 }
 
-.noticias__noticia:hover {
+.grid-item--destacada h3 {
+    text-align: center;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.grid-item--destacada p {
+    text-align: justify;
+    padding: 0 2em;
+    margin-bottom: .5em;
+    margin-top: .2em;
+}
+
+.grid-item--destacada:hover {
     transform: translateY(-4px);
 }
 
-.noticia__cuerpo {
-    padding: 15px;
+.grid-item {
+    grid-row: 2;
+    color: #000;
+    background: #ffffff;
+    transition: .2s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-item h3 {
     text-align: center;
+    margin-bottom: .5em;
+    margin-top: 2em;
 }
 
-.noticias__cuerpo h3 {
-    margin-bottom: 20px;
+.grid-item p {
+    text-align:justify;
+    padding: .4em 2em;
+    margin-top: .2em;
 }
 
-.noticia__cuerpo p {
-    line-height: 1.5;
-    
+.grid-item:hover {
+    transform: translateY(-4px);
 }
 
-/* Main - Historia del Taekwondo */
+/* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
-    margin: 2em 2em;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.historiaDelTkd h2 {
+    padding-left: 0;
+}
+
+.historiaDelTkd p {
+    margin-bottom: 1em;
     text-align: justify;
 }
 
 .historiaDelTkd a {
-    color: #3b5999;
+    color: #477CE0;
+    font-size: small;
 }
 
-/* Teoría del Taekwondo */
-.all {
-    margin-bottom: 2em;
-}
-
-.teoria {
-    font-size: 18px;
-    text-align: justify;
-    display: block;
-    margin: 1em 2em 0 2em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #c0b8b8;
-}
-
-.titulo {
-    background: #2f3640;
-    color:#fff;
-    padding: 5px;
-    margin-top: .8em;
-    margin-bottom: .8em;
-    
-    border-bottom: 1px solid #2f2f2f;
-}
-
-.teoria ul li, .teoria ol li {
-    margin-left: 1.5em;
-}
-
-/* Bibliografía del General Choi */
+/* BIBLIOGRAFÍA DEL GENERAL CHOI */
 .general-main {
     font-size: 1em;
     text-align: justify;
     margin: 1em 10em 2em 10em;
 }
 
-.general-choi h1 {
+.general__img h1 {
     color: #fff;
     text-align: center;
-    background: #c0b8b8;
+    background: #477CE0;
 }
 
 .general-main p {
     margin: 1em;
 }
 
-.general-choi img {
+.general__img img {
     float: left;
     height: 20em;
     width: 15em;
@@ -170,7 +174,7 @@ hr {
     margin-left: .5em;
 }
 
-.general-choi span {
+.general__img span {
     font-size: .8rem;
     color: rgba(0,0,0,.6);
     text-align: center;
@@ -234,7 +238,7 @@ hr {
     border: none;
     outline: none;
     height: 40px;
-    background: #000;
+    background: #477CE0;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -242,8 +246,6 @@ hr {
 
 .ingresar input[type="submit"]:hover {
     cursor: pointer;
-    background: #333;
-    color: #fff;
 }
 
 .ingresar a {
@@ -259,8 +261,8 @@ hr {
 
 /* Crear Cuenta */
 .crear-cuenta {
-    width: 90%;
-    height: 420px;
+    width: 50%;
+    height: 80px;
     background: #fff;
     color: #000;
     top: 50%;
@@ -315,7 +317,7 @@ hr {
     border: none;
     outline: none;
     height: 40px;
-    background: #000;
+    background: #477CE0;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -323,8 +325,6 @@ hr {
 
 .crear-cuenta input[type="submit"]:hover {
     cursor: pointer;
-    background: #333;
-    color: #fff;
 }
 
 .crear-cuenta a {
@@ -338,23 +338,83 @@ hr {
     color: rgb(73, 66, 66);
 }
 
-/* Footer */
-footer {
-    background-color: #2f3640;
-    border: 0;
-    margin: 0;
-    padding: 20px 0 20px 0;
-    vertical-align: baseline;
-    overflow: hidden;
-}
-
-/* Redes Sociales */
-.footer__nav {
-    margin: 10px 200px 0 40px;
-    padding: 0;
+/* FOOTER */
+.footer {
+    color: #fff;
+    background-color: #3b5999;
+    display:grid ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
-    float: left
+}
+
+.footer__grid-item:first-child{
+    padding: 2em 4em 2em 4em;
+    text-align: justify;
+}
+
+.footer__grid-item:nth-child(2) {
+    padding: 3em 4em 2em 4em;
+}
+
+/* TEORÍA DEL TAEKWONDO */
+.teoriaDelTkd {
+    margin-bottom: 2em;
+}
+
+.teoria {
+    font-size: 18px;
+    text-align: justify;
+    display: block;
+    margin: 1em 2em 0 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c0b8b8;
+}
+
+.titulo {
+    background:#477CE0;
+    color:#fff;
+    padding: 5px;
+    margin-top: .8em;
+    margin-bottom: .8em;
+}
+
+.teoria ul li, .teoria ol li {
+    margin-left: 1.5em;
+}
+
+/* CONTACTO */
+.footer__contacto {
+    text-align: center;
+}
+
+.footer__contacto p {
+    padding-bottom: 10px;
+}
+
+.footer__contacto a:hover {
+    color: #55acee;
+    transition: .2s;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* FOOTER */
+
+.footer__acercaDe h3 {
+    padding-bottom: 10px;
+}
+
+.footer__acercaDe p {
+    padding-bottom: 10px;
+}
+
+/* REDES */
+.footer__nav {
+    margin-left: .8em;
+    padding-bottom: 0;
+    padding-top: 3.5em;
+    text-align: center;
 }
 
 .footer__nav ul li {
@@ -362,12 +422,10 @@ footer {
     height: 50px;
     width: 50px;
     margin: 0 5px;
-    text-align: center;
 }
 
 .footer__nav ul li a {
     display: block;
-    padding: 0 10px;
     background-color: #333;
     color: #fff;
     line-height: 50px;
@@ -405,55 +463,20 @@ footer {
     color: #e4405f;
 }
 
-/* Contacto */
-.footer_contacto {
-    text-decoration: none;
-    margin-left: 700px;
-    margin-bottom: 1em;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
+.footer__grid-item:nth-child(3) {
+    grid-column: 1/ 3;
 }
 
-.footer_contacto a:hover {
-    color: #e4405f;
-    display: inline-block;
-    transition: .2s;
-    transform: translateY(1px) scale(1.05);
+/* COPYRIGHT */
+.footer__copyright hr {
+    margin-bottom: 12px;
 }
-
-/* Copyright */
 .footer__copyright {
-    color: #fff;
     text-align: center;
-    padding-top: 1em;
-    margin: auto;
-    font-size: .8em;
+    font-size: 14px;
+    padding: .5em 0 .5em 0;
 }
 
-@media (max-width: 768px) {
-    .header {
-        width: 100%;
-    }
-
-    .noticias__contenido {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media only screen and (min-width: 401px) and (max-width 960px) {
+    
 }
-
-@media (max-width: 500px) {
-    .main__titulo {
-        font-size: larger;
-        padding-top: 2em;
-        text-align: center;
-    }
-
-    .noticias__contenido {
-        grid-template-columns: repeat(1, 1fr)
-    }
-}
-
-
-
-
-
