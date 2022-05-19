@@ -13,27 +13,21 @@ a {
 /* NAVEGACIÓN */
 header {
     background: #fff;
-    display: flex;
     height: 70px;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
     padding: 0 2em;
 }
 
-.header__logo {
-    display: flex;
-    height: 30px;
-}
-
 .nav__ul li {
+    background-color: #fff;
     font-weight: 600;
+    padding-top: 1em;
     padding-right: 2em;
     display: inline-block;
 }
 
 .nav__li a:hover {
-    color: #477CE0;
+    color: #6036a4;
     display: block;
     transform: translateY(-4px) scale(1.05);   
     transition: .2s;
@@ -47,12 +41,17 @@ hr {
 /* LOGO Y TÍTULO */
 .main__titulo {
     display: flex;
-    margin: 2em;
+    margin: 9em 1em;
 }
 
 .main__titulo img {
     width: 300px;
     height: 300px;
+    margin-left: 0;
+}
+
+.main-titulo__container {
+    margin-left: 0;
 }
 
 .main__titulo h1 {
@@ -62,72 +61,21 @@ hr {
 
 /* NOTICIAS */
 #noticias {
-    color: #fff;
-    background: #3b5999;
+    background: #6036a4;
+    text-align: center;
 }
 
 #noticias h2 {
+    text-align: left;
     padding-top: 1em;
-    padding-left: 2em;
-}
-
-.noticias {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px 20px;
-    padding: 4em 4em 0 4em;
+    padding-left: 1em;
+    color: #fff;
 }
 
 .noticias__noticia {
-    background-color: #fff;
-    grid-row: 2;
-    height: 30em;
-    transition: .2s;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.noticias__noticia h3 {
-    text-align: center;text-decoration: underline;
-    margin-bottom: .5em;
-    margin-top: 10px;
-}
-
-.noticias__noticia h3:hover {
-    color: #3b5999;
-}
-
-.noticias__noticia p {
-    text-align: justify;
-    padding: 0 2em;
-    margin-top: 20px;
-}
-
-.noticias__noticia:hover {
-    transform: translateY(-4px);
-}
-
-.noticias__noticia:first-child {
-    grid-column: 2/ 4;
-    grid-row: 1;
     color: #000;
-    height: 36em;
-    transition: .2s;
-    overflow: hidden;
-    cursor: pointer;
-    justify-content: center;
 }
 
-.noticias__noticia:first-child h3{
-    text-align: center;
-    margin-bottom: .5em;
-    margin-top: .5em;
-}
-
-.noticias__noticia:first-child p {
-    padding-bottom: 10px;
-}
 
 /* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
@@ -149,7 +97,7 @@ hr {
 }
 
 .historiaDelTkd a {
-    color: #477CE0;
+    color: #6036a4;
     font-size: small;
 }
 
@@ -163,7 +111,7 @@ hr {
 .general__img h1 {
     color: #fff;
     text-align: center;
-    background: #477CE0;
+    background: #6036a4;
 }
 
 .general-main p {
@@ -243,7 +191,7 @@ hr {
     border: none;
     outline: none;
     height: 40px;
-    background: #477CE0;
+    background: #6036a4;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -322,7 +270,7 @@ hr {
     border: none;
     outline: none;
     height: 40px;
-    background: #477CE0;
+    background: #6036a4;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -358,7 +306,7 @@ hr {
 }
 
 .titulo {
-    background:#477CE0;
+    background:#6036a4;
     color:#fff;
     padding: 5px;
     margin-top: .8em;
@@ -372,7 +320,7 @@ hr {
 /* FOOTER */
 .footer {
     color: #fff;
-    background-color: #3b5999;
+    background-color: #6036a4;
     display:grid ;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -418,6 +366,7 @@ hr {
     margin-left: .8em;
     padding-bottom: 0;
     padding-top: 3.5em;
+    margin-left: -28px;
     text-align: center;
 }
 
@@ -490,6 +439,11 @@ hr {
         font-size: 12px;
     }
 
+    .nav {
+        margin-top: 1px;
+        padding-top: 4em;
+    }
+
     .nav__ul li {
         display: block;
     }
@@ -501,11 +455,15 @@ hr {
     }
 
     .main__titulo h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .main__hr {
         display: none;
+    }
+
+    .general-main {
+
     }
 
     .general__hr {
@@ -518,21 +476,7 @@ hr {
         font-size: 20px;
     }
 
-    .noticias {
-        text-align: center;
-        padding: 20px 30px 20px 30px;
-        display: block;
-    }
 
-    .noticias__noticia {
-        margin-top: 1em;
-        margin-bottom: 4em;
-        height: fit-content;
-    }
-
-    .noticias__noticia p {
-        padding-bottom: 2em;
-    }
 
     .teoriaDelTkd p, h3, h2, li {
         font-size: 14px;
@@ -565,20 +509,30 @@ hr {
         font-size: 14px;
     }
 
-    .main__titulo img {
-        width: 200px;
-        height: 200px;
+    .nav__ul {
+        font-size: 10px;
     }
 
-    .noticias__noticia {
-        height: 28em;
-        font-size: smaller;
+
+    .main__titulo {
+        display: flex;
+        margin-top: 2em;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .main__titulo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-titulo__container h1{
+        font-size: 40px;
     }
 
     .noticias__noticia:first-child {
         height: auto;
     }
-
 
     .general-main {
         font-size: 1em;
