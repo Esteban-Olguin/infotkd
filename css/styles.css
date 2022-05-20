@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     background-color: #fff;
     font-weight: 400;
 }
@@ -12,14 +11,12 @@ a {
 
 /* NAVEGACIÓN */
 header {
-    background: #fff;
     height: 70px;
     align-items: center;
     padding: 0 2em;
 }
 
 .nav__ul li {
-    background-color: #fff;
     font-weight: 600;
     padding-top: 1em;
     padding-right: 2em;
@@ -35,13 +32,12 @@ header {
 
 hr {
     border: 1px transparent #000;
-    margin: 0 2em;
+    margin: .5em .5em;
 }
 
 /* LOGO Y TÍTULO */
 .main__titulo {
-    display: flex;
-    margin: 9em 1em;
+    margin: 4em 0;
 }
 
 .main__titulo img {
@@ -55,6 +51,7 @@ hr {
 }
 
 .main__titulo h1 {
+    font-weight: bolder;
     font-size: 80px;
     padding-top: .5em;
 }
@@ -70,17 +67,16 @@ hr {
     padding-top: 1em;
     padding-left: 1em;
     color: #fff;
+    font-weight: 600;
 }
 
 .noticias__noticia {
     color: #000;
 }
 
-
 /* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
     color: #000;
-    display: grid;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
@@ -439,6 +435,10 @@ hr {
         font-size: 12px;
     }
 
+    hr {
+        display: none;
+    }
+
     .nav {
         margin-top: 1px;
         padding-top: 4em;
@@ -462,9 +462,6 @@ hr {
         display: none;
     }
 
-    .general-main {
-
-    }
 
     .general__hr {
         display: none;
@@ -509,6 +506,10 @@ hr {
         font-size: 14px;
     }
 
+    hr {
+        display: none;
+    }
+
     .nav__ul {
         font-size: 10px;
     }
@@ -517,7 +518,6 @@ hr {
     .main__titulo {
         display: flex;
         margin-top: 2em;
-        margin-bottom: 0;
         padding-bottom: 0;
     }
 
@@ -532,6 +532,10 @@ hr {
 
     .noticias__noticia:first-child {
         height: auto;
+    }
+
+    .teoriaDelTkd {
+        font-size: 10px;
     }
 
     .general-main {
