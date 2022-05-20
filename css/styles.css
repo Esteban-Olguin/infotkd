@@ -317,9 +317,6 @@ hr {
 .footer {
     color: #fff;
     background-color: #6036a4;
-    display:grid ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -333,18 +330,16 @@ hr {
     padding-bottom: 10px;
 }
 
-.footer__acercaDe:first-child{
-    padding: 2em 4em 2em 4em;
+.footer__acercaDe{
+    padding: 2em 0;
     text-align: justify;
-}
-
-.footer__acercaDe:nth-child(2) {
-    padding: 3em 4em 2em 4em;
 }
 
 /* CONTACTO */
 .footer__contacto {
     text-align: center;
+    padding-top: 6em;
+    padding-left: 6em;
 }
 
 .footer__contacto p {
@@ -360,10 +355,8 @@ hr {
 /* REDES */
 .footer__nav {
     margin-left: .8em;
-    padding-bottom: 0;
     padding-top: 3.5em;
     margin-left: -28px;
-    text-align: center;
 }
 
 .footer__nav ul li {
@@ -435,36 +428,12 @@ hr {
         font-size: 12px;
     }
 
-    hr {
+    .header__hr {
         display: none;
-    }
-
-    .nav {
-        margin-top: 1px;
-        padding-top: 4em;
-    }
-
-    .nav__ul li {
-        display: block;
-    }
-
-    .header__logo {
-        display: none;
-        padding: 0;
-        margin: 0;
     }
 
     .main__titulo h1 {
         font-size: 40px;
-    }
-
-    .main__hr {
-        display: none;
-    }
-
-
-    .general__hr {
-        display: none;
     }
 
     .main__titulo {
@@ -472,8 +441,6 @@ hr {
         text-align: center;
         font-size: 20px;
     }
-
-
 
     .teoriaDelTkd p, h3, h2, li {
         font-size: 14px;
@@ -493,6 +460,14 @@ hr {
         display: block;
     }
 
+    .footer__nav ul {
+        display: flex;
+    }
+
+    .footer__contacto {
+        padding-left: 5em;
+    }
+
     .footer__hr {
         margin-top: 1em;
     }
@@ -506,7 +481,7 @@ hr {
         font-size: 14px;
     }
 
-    hr {
+    .header__hr {
         display: none;
     }
 
@@ -516,18 +491,18 @@ hr {
 
 
     .main__titulo {
-        display: flex;
-        margin-top: 2em;
+        display: block;
         padding-bottom: 0;
+        text-align: center;
     }
 
     .main__titulo img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
     .main-titulo__container h1{
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .noticias__noticia:first-child {
@@ -542,6 +517,16 @@ hr {
         font-size: 1em;
         text-align: justify;
         margin: 1em 2em 2em 2em;
+    }
+
+    .footer__contacto {
+        margin-top: 6em;
+        align-items: center;
+    }
+
+    .footer__nav ul {
+        height: 200px;
+        width: 300px;
     }
 
 }
