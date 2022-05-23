@@ -74,6 +74,12 @@ hr {
     color: #000;
 }
 
+.noticia__noticias:hover {
+    transition: .3s;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, .4);
+}
+
 /* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
     color: #000;
@@ -411,7 +417,6 @@ hr {
 .footer__nav-instagram {
     color: #e4405f;
 }
-
 
 /* COPYRIGHT */
 .footer__copyright hr {
