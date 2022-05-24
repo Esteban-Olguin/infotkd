@@ -16,6 +16,10 @@ header {
     padding: 0 2em;
 }
 
+.nav {
+    margin-bottom: .4rem;
+}
+
 .nav__ul li {
     font-weight: 600;
     padding-top: 1em;
@@ -32,25 +36,19 @@ header {
 
 hr {
     border: 1px transparent #000;
-    margin: .5em .5em;
 }
 
 /* LOGO Y TÍTULO */
-.main__titulo {
-    margin: 4em 0;
-}
 
 .main__titulo img {
     width: 300px;
     height: 300px;
     margin-left: 0;
-}
-
-.main-titulo__container {
-    margin-left: 0;
+    margin-top: 2em;
 }
 
 .main__titulo h1 {
+    color: #000;
     font-weight: bolder;
     font-size: 80px;
     padding-top: .5em;
@@ -323,9 +321,6 @@ hr {
 .footer {
     color: #fff;
     background-color: #6036a4;
-    display:grid ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -339,18 +334,15 @@ hr {
     padding-bottom: 10px;
 }
 
-.footer__acercaDe:first-child{
+.footer__acercaDe{
     padding: 2em 4em 2em 4em;
     text-align: justify;
-}
-
-.footer__acercaDe:nth-child(2) {
-    padding: 3em 4em 2em 4em;
 }
 
 /* CONTACTO */
 .footer__contacto {
     text-align: center;
+    padding-top: 4rem;
 }
 
 .footer__contacto p {
@@ -367,7 +359,7 @@ hr {
 .footer__nav {
     margin-left: .8em;
     padding-bottom: 0;
-    padding-top: 3.5em;
+    padding-top: 3.52em;
     margin-left: -28px;
     text-align: center;
 }
@@ -420,16 +412,12 @@ hr {
 
 /* COPYRIGHT */
 .footer__copyright hr {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .footer__copyright {
     text-align: center;
     font-size: 14px;
-    padding: .5em 0 .5em 0;
-}
-
-.footer__copyright:nth-child(3) {
-    grid-column: 1/ 3;
+    padding: .3em 0 .5em 0;
 }
 
 /* MOBILE */
@@ -438,10 +426,6 @@ hr {
 
     body {
         font-size: 12px;
-    }
-
-    hr {
-        display: none;
     }
 
     .nav {
@@ -453,23 +437,8 @@ hr {
         display: block;
     }
 
-    .header__logo {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
-
     .main__titulo h1 {
         font-size: 40px;
-    }
-
-    .main__hr {
-        display: none;
-    }
-
-
-    .general__hr {
-        display: none;
     }
 
     .main__titulo {
@@ -521,7 +490,7 @@ hr {
 
 
     .main__titulo {
-        display: flex;
+        display: block;
         margin-top: 2em;
         padding-bottom: 0;
     }
@@ -533,6 +502,7 @@ hr {
 
     .main-titulo__container h1{
         font-size: 40px;
+        display: block;
     }
 
     .noticias__noticia:first-child {
