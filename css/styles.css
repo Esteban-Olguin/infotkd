@@ -1,563 +1,379 @@
+@charset "UTF-8";
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-    font-weight: 400;
-}
-
-a {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  font-weight: 400; }
+  body a {
     text-decoration: none;
-    color: #000;
-}
+    color: #000; }
 
 /* NAVEGACIÓN */
 header {
-    height: 70px;
-    align-items: center;
-    padding: 0 2em;
-}
+  height: 70px;
+  align-items: center;
+  padding: 0 2em; }
 
-.nav {
-    margin-bottom: .4rem;
-}
-
-.nav__ul li {
+nav {
+  margin-bottom: .4rem; }
+  nav li {
     font-weight: 600;
     padding-top: 1em;
     padding-right: 2em;
-    display: inline-block;
-}
-
-.nav__li a:hover {
-    color: #6036a4;
-    display: block;
-    transform: translateY(-4px) scale(1.05);   
-    transition: .2s;
-}
+    display: inline-block; }
+    nav li a:hover {
+      color: #6036a4;
+      display: block;
+      transform: translateY(-4px) scale(1.05);
+      transition: .2s; }
 
 hr {
-    border: 1px transparent #000;
-}
+  border: 1px transparent #000; }
 
 /* LOGO Y TÍTULO */
-
 .main__titulo img {
-    width: 300px;
-    height: 300px;
-    margin-left: 0;
-    margin-top: 2em;
-}
+  width: 300px;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 2em; }
 
 .main__titulo h1 {
-    color: #000;
-    font-weight: bolder;
-    font-size: 80px;
-    padding-top: .5em;
-}
+  color: #000;
+  font-weight: bolder;
+  font-size: 80px;
+  padding-top: .5em; }
 
 /* NOTICIAS */
 #noticias {
-    background: #6036a4;
-    text-align: center;
-}
-
-#noticias h2 {
+  background: #6036a4;
+  text-align: center; }
+  #noticias h2 {
     text-align: left;
     padding-top: 1em;
     padding-left: 1em;
     color: #fff;
-    font-weight: 600;
-}
+    font-weight: 600; }
 
 .noticias__noticia {
-    color: #000;
-}
-
-.noticia__noticias:hover {
+  color: #000; }
+  .noticias__noticia:hover {
     transition: .3s;
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, .4);
-}
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.4); }
 
 /* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
-    color: #000;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
-}
-
-.historiaDelTkd h2 {
+  color: #000;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em; }
+  .historiaDelTkd h2 {
     padding-top: 2em;
-    padding-left: 0;
-}
-
-.historiaDelTkd p {
+    padding-left: 0; }
+  .historiaDelTkd p {
     margin-bottom: 1em;
-    text-align: justify;
-}
-
-.historiaDelTkd a {
+    text-align: justify; }
+  .historiaDelTkd a {
     color: #6036a4;
-    font-size: small;
-}
+    font-size: small; }
 
 /* BIBLIOGRAFÍA DEL GENERAL CHOI */
-.general-main {
-    font-size: 1em;
-    text-align: justify;
-    margin: 1em 10em 2em 10em;
-}
-
-.general__img h1 {
+.general__main {
+  font-size: 1em;
+  text-align: justify;
+  margin: 1em 10em 2em 10em; }
+  .general__main h1 {
     color: #fff;
     text-align: center;
-    background: #6036a4;
-}
+    background: #6036a4; }
 
-.general-main p {
-    margin: 1em;
-}
+.general p {
+  margin: 1em; }
 
-.general__img img {
-    float: left;
-    height: 20em;
-    width: 15em;
-    margin-right: 1em;
-    margin-bottom: .5em;
-    margin-left: .5em;
-}
+.general__img {
+  float: left;
+  height: 20em;
+  width: 15em;
+  margin-right: 1em;
+  margin-bottom: .5em;
+  margin-left: .5em; }
 
-.general__img span {
-    font-size: .8rem;
-    color: rgba(0,0,0,.6);
-    text-align: center;
-}
+.general span {
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center; }
 
 /* Iniciar Sesión */
 .ingresar {
-    width: 320px;
-    height: 420px;
-    background: #fff;
-    color: #000;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    border: 1px solid #000;
-}
-
-.ingresar__img {
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border: 1px solid #000; }
+  .ingresar__img {
     width: 100px;
     height: 100px;
     border: 2px solid #000;
     border-radius: 50%;
     position: absolute;
     top: -50px;
-    left: calc(50% - 50px);
-}
-
-.ingresar h1 {
+    left: calc(50% - 50px); }
+  .ingresar h1 {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 22px;
-}
-
-.ingresar label {
+    font-size: 22px; }
+  .ingresar label {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    display: block;
-}
-
-.ingresar input {
+    display: block; }
+  .ingresar input {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.ingresar input[type="text"], .ingresar input[type="password"] {
+    margin-bottom: 20px; }
+  .ingresar__text {
     border: none;
     border-bottom: 1px solid #000;
     background: transparent;
     outline: none;
     height: 40px;
     color: #000;
-    font-size: 16px;
-}
-
-.ingresar input[type="submit"] {
+    font-size: 16px; }
+  .ingresar__password {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px; }
+  .ingresar__submit {
     border: none;
     outline: none;
     height: 40px;
     background: #6036a4;
     color: #fff;
     font-size: 18px;
-    border-radius: 20px;
-}
-
-.ingresar input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-.ingresar a {
+    border-radius: 20px; }
+    .ingresar__submit:hover {
+      cursor: pointer; }
+  .ingresar a {
     text-decoration: none;
     font-size: 14px;
     line-height: 20px;
-    color: #000;
-}
-
-.ingresar a:hover {
-    color: rgb(73, 66, 66);
-}
+    color: #000; }
+    .ingresar a:hover {
+      color: #494242; }
 
 /* Crear Cuenta */
 .crear-cuenta {
-    width: 50%;
-    height: 80px;
-    background: #fff;
-    color: #000;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px 430px 30px;
-    border: 1px solid #000;
-}
-
-.ingresar__img {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-
-.crear-cuenta h1 {
+  width: 50%;
+  height: 80px;
+  background: #fff;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px 430px 30px;
+  border: 1px solid #000; }
+  .crear-cuenta h1 {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 22px;
-}
-
-.crear-cuenta label {
+    font-size: 22px; }
+  .crear-cuenta label {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    display: block;
-}
-
-.crear-cuenta input {
+    display: block; }
+  .crear-cuenta input {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.crear-cuenta input[type="text"], .crear-cuenta input[type="password"] {
+    margin-bottom: 20px; }
+  .crear-cuenta__text {
     border: none;
     border-bottom: 1px solid #000;
     background: transparent;
     outline: none;
     height: 40px;
     color: #000;
-    font-size: 16px;
-}
-
-.crear-cuenta input[type="submit"] {
+    font-size: 16px; }
+  .crear-cuenta__password {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px; }
+  .crear-cuenta__submit {
     border: none;
     outline: none;
     height: 40px;
     background: #6036a4;
     color: #fff;
     font-size: 18px;
-    border-radius: 20px;
-}
-
-.crear-cuenta input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-.crear-cuenta a {
+    border-radius: 20px; }
+    .crear-cuenta__submit:hover {
+      cursor: pointer; }
+  .crear-cuenta a {
     text-decoration: none;
     font-size: 14px;
     line-height: 20px;
-    color: #000;
-}
-
-.crear-cuenta a:hover {
-    color: rgb(73, 66, 66);
-}
+    color: #000; }
+    .crear-cuenta a:hover {
+      color: #494242; }
 
 /* TEORÍA DEL TAEKWONDO */
 .teoriaDelTkd {
-    margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
 .teoria {
-    font-size: 18px;
-    text-align: justify;
-    display: block;
-    margin: 1em 2em 0 2em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #c0b8b8;
-}
+  font-size: 18px;
+  text-align: justify;
+  display: block;
+  margin: 1em 2em 0 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c0b8b8; }
+  .teoria ul li {
+    margin-left: .5em; }
+  .teoria ol li {
+    margin-left: .5em; }
 
 .titulo {
-    background:#6036a4;
-    color:#fff;
-    padding: 5px;
-    margin-top: .8em;
-    margin-bottom: .8em;
-}
-
-.teoria ul li, .teoria ol li {
-    margin-left: 1.5em;
-}
+  background: #6036a4;
+  color: #fff;
+  padding: 5px;
+  margin-top: .8em;
+  margin-bottom: .8em; }
 
 /* FOOTER */
 .footer {
-    color: #fff;
-    background-color: #6036a4;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ACERCA DE */
-.footer__acercaDe h3 {
-    padding-bottom: 10px;
-}
-
-.footer__acercaDe p {
-    padding-bottom: 10px;
-}
-
-.footer__acercaDe{
-<<<<<<< HEAD
-    padding: 2em 0;
-=======
+  color: #fff;
+  background-color: #6036a4;
+  align-items: center;
+  justify-content: center;
+  /* ACERCA DE */
+  /* CONTACTO */
+  /* REDES */
+  /* COÝRIGHT */ }
+  .footer__acercaDe {
     padding: 2em 4em 2em 4em;
->>>>>>> acomodando-bootstrap
-    text-align: justify;
-}
-
-/* CONTACTO */
-.footer__contacto {
+    text-align: justify; }
+    .footer__acercaDe h3 {
+      padding-bottom: 10px; }
+    .footer__acercaDe p {
+      padding-bottom: 10px; }
+  .footer__contacto {
     text-align: center;
-<<<<<<< HEAD
-    padding-top: 6em;
-    padding-left: 6em;
-=======
-    padding-top: 4rem;
->>>>>>> acomodando-bootstrap
-}
-
-.footer__contacto p {
-    padding-bottom: 10px;
-}
-
-.footer__contacto a:hover {
+    padding-top: 4rem; }
+  .footer p {
+    padding-bottom: 10px; }
+  .footer a:hover {
     color: #fff;
     transition: .2s;
-    transform: translateY(-3px) scale(1.05);
-}
-
-/* REDES */
-.footer__nav {
-    margin-left: .8em;
-<<<<<<< HEAD
-    padding-top: 3.5em;
-=======
+    transform: translateY(-3px) scale(1.05); }
+  .footer__nav {
     padding-bottom: 0;
-    padding-top: 3.52em;
->>>>>>> acomodando-bootstrap
-    margin-left: -28px;
-}
-
-.footer__nav ul li {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    margin: 0 5px;
-}
-
-.footer__nav ul li a {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, .2);
-    transition: .2s;
-}
-
-.footer__nav ul li a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, .4);
-}
-
-.footer__nav ul li .footer__nav-facebook:hover {
-    background: #3b5999;
-}
-
-.footer__nav ul li .footer__nav-twitter:hover {
-    background: #55acee;
-}
-
-.footer__nav ul li .footer__nav-instagram:hover {
-    background: #e4405f;
-}
-
-.footer__nav-facebook {
-    color: #3b5999;
-}
-
-.footer__nav-twitter {
-    color: #55acee;
-}
-
-.footer__nav-instagram {
-    color: #e4405f;
-}
-
-/* COPYRIGHT */
-.footer__copyright hr {
-    margin-bottom: 10px;
-}
-.footer__copyright {
+    padding-top: 2em;
+    margin-left: 0; }
+    .footer__nav ul li {
+      display: inline-block;
+      height: 80px;
+      width: 80px;
+      margin: 0 2px; }
+      .footer__nav ul li a {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: .2s; }
+        .footer__nav ul li a:hover {
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.4); }
+    .footer__nav-facebook:hover {
+      background: #3b5999; }
+    .footer__nav-twitter:hover {
+      background: #55acee; }
+    .footer__nav-instagram:hover {
+      background: #e4405f; }
+  .footer__copyright {
     text-align: center;
     font-size: 14px;
-    padding: .3em 0 .5em 0;
-}
+    padding: .3em 0 .5em 0; }
+    .footer__copyright hr {
+      margin-bottom: 10px; }
 
 /* MOBILE */
-
-@media only screen and (max-width:540px) {
-
-    body {
-        font-size: 12px;
-    }
-
-<<<<<<< HEAD
-    .header__hr {
-        display: none;
-=======
-    .nav {
-        margin-top: 1px;
-        padding-top: 4em;
-    }
-
-    .nav__ul li {
-        display: block;
->>>>>>> acomodando-bootstrap
-    }
-
+@media only screen and (max-width: 540px) {
+  body {
+    font-size: 12px; }
+  .nav {
+    margin-top: 1px;
+    padding-top: 4em; }
+    .nav li {
+      display: block; }
+  .main__titulo {
+    display: block;
+    text-align: center;
+    font-size: 20px; }
     .main__titulo h1 {
-        font-size: 40px;
-    }
-
-    .main__titulo {
-        display: block;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .teoriaDelTkd p, h3, h2, li {
-        font-size: 14px;
-    }
-
-    .general-main {
-        display: grid;
-        margin: 4px;
-        grid-template-columns: 1fr;
-    }
-
-    .crear-cuenta {
-        width: 28em;
-    }
-
-    .footer {
-        display: block;
-    }
-
-    .footer__nav ul {
-        display: flex;
-    }
-
+      font-size: 40px; }
+  .teoriaDelTkd p, .teoriaDelTkd h3, .teoriaDelTkd h2, .teoriaDelTkd li {
+    font-size: 14px; }
+  .general-main {
+    display: grid;
+    margin: 4px;
+    grid-template-columns: 1fr; }
+  .crear-cuenta {
+    width: 28em; }
+  .footer {
+    display: block; }
+    .footer nav ul {
+      display: flex; }
     .footer__contacto {
-        padding-left: 5em;
-    }
-
-    .footer__hr {
-        margin-top: 1em;
-    }
-}
+      padding-left: 5em; }
+    .footer hr {
+      margin-top: 1em; } }
 
 /* TABLET */
-
 @media only screen and (min-width: 541px) and (max-width: 960px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    .header__hr {
-        display: none;
-    }
-
-    .nav__ul {
-        font-size: 10px;
-    }
-
-
-    .main__titulo {
-        display: block;
-<<<<<<< HEAD
-=======
-        margin-top: 2em;
->>>>>>> acomodando-bootstrap
-        padding-bottom: 0;
-        text-align: center;
-    }
-
-    .main__titulo img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .main-titulo__container h1{
-<<<<<<< HEAD
-        font-size: 20px;
-=======
-        font-size: 40px;
-        display: block;
->>>>>>> acomodando-bootstrap
-    }
-
-    .noticias__noticia:first-child {
-        height: auto;
-    }
-
-    .teoriaDelTkd {
-        font-size: 10px;
-    }
-
-    .general-main {
-        font-size: 1em;
-        text-align: justify;
-        margin: 1em 2em 2em 2em;
-    }
-
-    .footer__contacto {
-        margin-top: 6em;
-        align-items: center;
-    }
-
-    .footer__nav ul {
-        height: 200px;
-        width: 300px;
-    }
-
-}
+  body {
+    font-size: 14px; }
+  .header__hr {
+    display: none; }
+  .nav__ul {
+    font-size: 10px; }
+  .main__titulo {
+    display: block;
+    margin-top: 2em;
+    padding-bottom: 0;
+    text-align: center; }
+    .main__titulo__titulo img {
+      width: 200px;
+      height: 200px; }
+    .main__titulo__container h1 {
+      font-size: 40px;
+      display: block; }
+  .noticias__noticia {
+    height: auto; }
+  .teoriaDelTkd {
+    font-size: 10px; }
+  .general-main {
+    font-size: 1em;
+    text-align: justify;
+    margin: 1em 2em 2em 2em; }
+  .footer__contacto {
+    margin-top: 6em;
+    align-items: center; }
+  .footer__nav {
+    height: 200px;
+    width: 300px; } }
