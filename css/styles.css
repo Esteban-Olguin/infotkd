@@ -249,9 +249,7 @@ header {
   .footer p {
     padding-bottom: 10px; }
   .footer a:hover {
-    color: #fff;
-    transition: .2s;
-    transform: translateY(-3px) scale(1.05); }
+    color: #fff; }
   .footer__nav {
     padding-bottom: 0;
     padding-top: 2em;
