@@ -1,0 +1,115 @@
+/* MOBILE */
+@media only screen and (max-width:540px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .nav {
+        margin-top: 1px;
+        padding-top: 4em;
+        li {
+            display: block;
+        }
+    }
+
+    .main__titulo {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .teoriaDelTkd {
+        p, h3, h2, li {
+            font-size: 14px;
+        }
+    }
+
+    .general-main {
+        display: grid;
+        margin: 4px;
+        grid-template-columns: 1fr;
+    }
+
+    .crear-cuenta {
+        width: 28em;
+    }
+
+    .footer {
+        display: block;
+        nav {
+            ul {
+                display: flex;
+            }
+        }
+        &__contacto {
+            padding-left: 5em;
+        }
+        hr {
+            margin-top: 1em;
+        }
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 541px) and (max-width: 960px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .header__hr {
+        display: none;
+    }
+
+    .nav__ul {
+        font-size: 10px;
+    }
+
+    .main__titulo {
+        display: block;
+        margin-top: 2em;
+        padding-bottom: 0;
+        text-align: center;
+        &__titulo {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__container {
+            h1 {
+                font-size: 40px;
+                display: block;
+            }
+        }
+    }
+
+    .noticias__noticia {
+        height: auto;
+    }
+
+    .teoriaDelTkd {
+        font-size: 10px;
+    }
+
+    .general-main {
+        font-size: 1em;
+        text-align: justify;
+        margin: 1em 2em 2em 2em;
+    }
+
+    .footer {
+        &__contacto {
+            margin-top: 6em;
+            align-items: center;
+        }
+        &__nav {
+            height: 200px;
+            width: 300px;
+        }
+    }
+}

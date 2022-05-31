@@ -1,0 +1,28 @@
+.general {
+    &__main {
+        font-size: 1em;
+        text-align: justify;
+        margin: 1em 10em 2em 10em;
+        h1 {
+            color: $font-color-blanco;
+            text-align: center;
+            background: $color-principal;
+        }
+    }
+    p {
+        margin: 1em;
+    }
+    &__img {
+        float: left;
+        height: 20em;
+        width: 15em;
+        margin-right: 1em;
+        margin-bottom: .5em;
+        margin-left: .5em;
+    }
+    span {
+        font-size: .8rem;
+        color: rgba(0,0,0,.6);
+        text-align: center;
+    }
+}

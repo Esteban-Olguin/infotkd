@@ -1,48 +1,25 @@
 @charset "UTF-8";
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  font-weight: 400; }
-  body a {
-    text-decoration: none;
-    color: #000; }
-
-/* NAVEGACIÓN */
+/* COLORES */
+/* FUENTE */
 header {
   height: 70px;
   align-items: center;
-  padding: 0 2em; }
+  padding: 0; }
+  header nav {
+    margin-bottom: .4rem; }
+    header nav li {
+      font-weight: 600;
+      padding-top: 1em;
+      padding-right: 2em;
+      display: inline-block; }
+      header nav li a:hover {
+        color: #6036a4;
+        display: block;
+        transform: translateY(-4px) scale(1.05);
+        transition: .2s; }
+  header hr {
+    border: 1px transparent #000; }
 
-nav {
-  margin-bottom: .4rem; }
-  nav li {
-    font-weight: 600;
-    padding-top: 1em;
-    padding-right: 2em;
-    display: inline-block; }
-    nav li a:hover {
-      color: #6036a4;
-      display: block;
-      transform: translateY(-4px) scale(1.05);
-      transition: .2s; }
-
-hr {
-  border: 1px transparent #000; }
-
-/* LOGO Y TÍTULO */
-.main__titulo img {
-  width: 300px;
-  height: 300px;
-  margin-left: 0;
-  margin-top: 2em; }
-
-.main__titulo h1 {
-  color: #000;
-  font-weight: bolder;
-  font-size: 80px;
-  padding-top: .5em; }
-
-/* NOTICIAS */
 #noticias {
   background: #6036a4;
   text-align: center; }
@@ -60,7 +37,6 @@ hr {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.4); }
 
-/* MAIN - HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
   color: #000;
   padding-left: 2em;
@@ -76,7 +52,6 @@ hr {
     color: #6036a4;
     font-size: small; }
 
-/* BIBLIOGRAFÍA DEL GENERAL CHOI */
 .general__main {
   font-size: 1em;
   text-align: justify;
@@ -102,8 +77,30 @@ hr {
   color: rgba(0, 0, 0, 0.6);
   text-align: center; }
 
-/* Iniciar Sesión */
+.teoriaDelTkd {
+  margin-bottom: 2em; }
+
+.teoria {
+  font-size: 18px;
+  text-align: justify;
+  display: block;
+  margin: 1em 2em 0 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c0b8b8; }
+  .teoria ul li {
+    margin-left: .5em; }
+  .teoria ol li {
+    margin-left: .5em; }
+
+.titulo {
+  background: #6036a4;
+  color: #fff;
+  padding: 5px;
+  margin-top: .8em;
+  margin-bottom: .8em; }
+
 .ingresar {
+  margin-top: 4em;
   width: 320px;
   height: 420px;
   background: #fff;
@@ -170,9 +167,9 @@ hr {
     .ingresar a:hover {
       color: #494242; }
 
-/* Crear Cuenta */
 .crear-cuenta {
-  width: 50%;
+  margin-top: 4rem;
+  width: 40%;
   height: 80px;
   background: #fff;
   color: #000;
@@ -230,30 +227,6 @@ hr {
     .crear-cuenta a:hover {
       color: #494242; }
 
-/* TEORÍA DEL TAEKWONDO */
-.teoriaDelTkd {
-  margin-bottom: 2em; }
-
-.teoria {
-  font-size: 18px;
-  text-align: justify;
-  display: block;
-  margin: 1em 2em 0 2em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #c0b8b8; }
-  .teoria ul li {
-    margin-left: .5em; }
-  .teoria ol li {
-    margin-left: .5em; }
-
-.titulo {
-  background: #6036a4;
-  color: #fff;
-  padding: 5px;
-  margin-top: .8em;
-  margin-bottom: .8em; }
-
-/* FOOTER */
 .footer {
   color: #fff;
   background-color: #6036a4;
@@ -282,11 +255,11 @@ hr {
   .footer__nav {
     padding-bottom: 0;
     padding-top: 2em;
-    margin-left: 0; }
+    margin-left: -1rem; }
     .footer__nav ul li {
       display: inline-block;
-      height: 80px;
-      width: 80px;
+      height: 50px;
+      width: 50px;
       margin: 0 2px; }
       .footer__nav ul li a {
         display: block;
@@ -307,8 +280,7 @@ hr {
       background: #e4405f; }
   .footer__copyright {
     text-align: center;
-    font-size: 14px;
-    padding: .3em 0 .5em 0; }
+    font-size: 14px; }
     .footer__copyright hr {
       margin-bottom: 10px; }
 
@@ -377,3 +349,25 @@ hr {
   .footer__nav {
     height: 200px;
     width: 300px; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+/* LOGO Y TÍTULO */
+.main__titulo img {
+  width: 300px;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 4em; }
+
+.main__titulo h1 {
+  color: #000;
+  font-weight: bolder;
+  font-size: 80px;
+  padding-top: .5em; }

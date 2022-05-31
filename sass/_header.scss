@@ -1,0 +1,26 @@
+header {
+    height: 70px;
+    align-items: center;
+    padding: 0;
+    nav {
+        margin-bottom: .4rem;
+        li {
+            font-weight: 600;
+            padding-top: 1em;
+            padding-right: 2em;
+            display: inline-block;
+            a {
+                &:hover {
+                    color: $color-principal;
+                    display: block;
+                    transform: translateY(-4px) scale(1.05);   
+                    transition: .2s;
+            }
+            }
+        }
+    }
+    
+    hr {
+        border: 1px transparent #000;
+    }
+}
