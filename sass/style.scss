@@ -1,58 +1,300 @@
 @import 'variables';
 @import 'header';
-@import 'noticias';
-@import 'hitoria_del_tkd';
-@import 'general_choi';
-@import 'teoria';
-@import 'ingresar';
-@import 'crear_cuenta';
 @import 'footer';
 @import 'media_queries';
 
 body {
     font-family: $fuente-principal;
-    background-color: $color-de-fondo;
+    background-color: $color-claro;
     font-weight: 400;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: $font-color-negro;
+    color: $color-oscuro;
 }
 
 /* LOGO Y TÍTULO */
 .main__titulo {
+    margin: 0;
     img {
         width: 300px;
         height: 300px;
         margin-left: 0;
+        margin-right: 0;
         margin-top: 4em;
     }
     h1 {
-        color: $font-color-negro;
+        color: $color-oscuro;
         font-weight: bolder;
-        font-size: 80px;
+        font-size: 60px;
         padding-top: .5em;
     }
 }
 
+/* NOTICIAS */
 #noticias {
+    @extend .cambio-color;
     background: $color-principal;
     text-align: center;
     h2 {
         text-align: left;
         padding-top: 1em;
         padding-left: 1em;
-        color: $font-color-blanco;
+        color: $color-claro;
         font-weight: 600;
     }
 }
 
-.noticias__noticia {
-    color: $font-color-negro;
-    &:hover {
-        transition: .3s;
-        transform: translateY(-4px) scale(1.05);
-        box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, .4);
+
+/* HISTORIA DEL TAEKWONDO */
+.historiaDelTkd {
+    color: $color-oscuro;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    h2 {
+        padding-top: 2em;
+        padding-left: 0;
+    }
+    p {
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+    a {
+        color: $color-principal;
+        font-size: small;
+    }
+}
+
+/* TEORIA DEL TAEKWONDO */
+.teoriaDelTkd {
+    margin-bottom: 2em;
+    .teoria {
+        font-size: 16px;
+        text-align: justify;
+        display: block;
+        margin: 1em 2em 0 2em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #c0b8b8;
+        h1, h2, h3 {
+            @extend .cambio-color;
+            font-size: 30px;
+        }
+        ul {
+            li {
+                margin-left: .5em;
+            }
+        }
+        ol {
+            li {
+                margin-left: .5em;
+            }
+        }
+    }
+    
+    .titulo {
+        background:$color-principal;
+        color:#fff;
+        padding: 5px;
+        margin-top: .8em;
+        margin-bottom: .8em;
+    }
+}
+
+/* BIBLIOGRAFÍA DEL GENERAL CHOI */
+.general {
+    &__main {
+        font-size: 1em;
+        text-align: justify;
+        margin: 1em 8em 2em 8em;
+        h1 {
+            @extend .cambio-color;
+            color: $color-claro;
+            text-align: center;
+            background: $color-principal;
+        }
+    }
+    p {
+        margin: 1em;
+    }
+    &__img {
+        float: left;
+        height: 20em;
+        width: 15em;
+        margin-right: 1em;
+        margin-bottom: .5em;
+        margin-left: .5em;
+    }
+    span {
+        font-size: .8rem;
+        color: rgba(0,0,0,.6);
+        text-align: center;
+    }
+}
+
+/* INGRESAR */
+.ingresar {
+    margin-top: 4em;
+    width: 320px;
+    height: 420px;
+    background: $color-claro;
+    color: $color-oscuro;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border: 1px solid #000;
+    &__img {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+    h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__text {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: $color-oscuro;
+        font-size: 16px;
+    }
+    &__password {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: $color-oscuro;
+        font-size: 16px;
+    }
+    &__submit {
+        @extend .cambio-color;
+        border: none;
+        outline: none;
+        height: 40px;
+        background: $color-principal;
+        color: $color-claro;
+        font-size: 18px;
+        border-radius: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    a {
+        @extend .cambio-color-hover;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-oscuro;
+        &:hover {
+            color: rgb(73, 66, 66);
+        }
+    }
+}
+
+/* CREAR CUENTA */
+.crear-cuenta {
+    margin-top: 4rem;
+    width: 40%;
+    height: 80px;
+    background: $color-claro;
+    color: $color-oscuro;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px 430px 30px;
+    border: 1px solid #000;
+    h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__text {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: $color-oscuro;
+        font-size: 16px;
+    }
+    &__password {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: $color-oscuro;
+        font-size: 16px;
+    }
+    &__submit {
+        @extend .cambio-color;
+        border: none;
+        outline: none;
+        height: 40px;
+        background: $color-principal;
+        color: $color-claro;
+        font-size: 18px;
+        border-radius: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-oscuro;
+        &:hover {
+            color: rgb(73, 66, 66);
+        }
+    }
+}
+
+/* EXTEND */
+.cambio-color {
+    background: $color2;
+}
+
+.cambio-color-hover {
+    a:hover {
+        color: $color2;
     }
 }

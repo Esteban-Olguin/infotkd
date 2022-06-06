@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- KEYWORDS -->   
-    <meta name="keywords"  content="HTML, ASP, JS, META, TKD, TAEKWONDO, GENERAL CHOI, TEORIA DEL TAEKWON-DO, NOTICIAS">
+    <meta name="keywords"  content="TKD, TAEKWONDO, GENERAL CHOI, TEORIA DEL TAEKWON-DO, NOTICIAS">
 <!-- DESCRIPCIÓN -->
     <meta name="description" content="Es una fuente confiable de información en la que se podrá conocer lo último de lo último, y al mismo tiempo tener la teoría necesaria a mano para estudiar y conocer.">
+<!-- TÍTULO -->
     <title>InfoTkd | La información más relevante sobre el taekwondo</title>
     <link rel="icon" href="./resources/logos/favicon-16x16.png">
 <!-- FUENTES -->
@@ -26,37 +26,40 @@
 <body class="animate__animated animate__fadeIn">
 <!-- NAVEGACIÓN -->
 <header class="header">
-    <nav class=" footer__linavbar navbar-expand-lg p-3 d-block">
-        <div class="container-fluid">
-            <button class="navbar-toggler text-bg-light rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ps-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <ul class="justify-content-s">
-                        <li>
-                            <a class="nav" href="./index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#noticias">Noticias</a>
-                        </li>
-                        <li>
-                            <a href="#historiaDelTkd">Historia del Taekwondo</a>
-                        </li>
-                        <li>
-                            <a href="./pages/teoria.html">Teoría del Taekwondo</a>
-                        </li>
-                        <li>
-                            <a href="./pages/general_choi.html">General Choi</a>
-                        </li>
-                        <li>
-                            <a href="./pages/acceder.html">Acceder</a>
-                        </li>
-                    </ul>
+                <ul class="navbar__logo pt-2">
+                    <li>
+                        <a href="./index.html"><img src="./resources/logos/favicon-32x32.png" alt="Logo InfoTkd"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-lg-2">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#noticias">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#historiaDelTkd">Historia del Taekwondo</a>
+                    </li>
+                    <li>
+                        <a href="./pages/teoria.html">Teoría del Taekwondo</a>
+                    </li>
+                    <li>
+                        <a href="./pages/general_choi.html">General Choi</a>
+                    </li>
+                    <li>
+                        <a href="./pages/acceder.html">Acceder</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 mt-2 rounded-0" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline mt-2 rounded-0" type="submit">Buscar</button>
+                    <input class="form-control me-2 rounded-0" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn rounded-0" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -65,7 +68,7 @@
 <main>
     <div class="main__titulo-container main__titulo row">
         <div class="col">
-            <img class=" mx-auto d-block" alt="Logo InfoTkd" src="./resources/logos/android-chrome-512x512.png">
+            <img class="mx-auto d-block" alt="Logo InfoTkd" src="./resources/logos/android-chrome-512x512.png">
             <h1 class="text-center">TAEKWONDO</h1>
         </div>
     </div>
@@ -76,9 +79,25 @@
         <div class="carousel-inner">
 <!-- NOTICIA 1 -->
             <div class="carousel-item active">
-                <div class="row ">
-                    <div class="noticia__noticias card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                <div class="row">
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
                         <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
                         <div class="card-body">
                             <h3 class="card-title">Noticia</h3>
                             <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
@@ -89,13 +108,29 @@
             </div>
 <!-- NOTICIA 2 -->
             <div class="carousel-item">
-                <div class="row ">
-                    <div class="noticia__noticias card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                <div class="row">
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
                         <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
                         <div class="card-body">
                             <h3 class="card-title">Noticia</h3>
                             <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                            <button class="btn btn-primary rounded-0">Ir a la noticia</>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3Este es un texto genérico para esta noticia. No redirige a ningún lado.">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
                         </div>
                     </div>
                 </div>
@@ -103,8 +138,24 @@
 <!-- NOTICIA 3 --> 
             <div class="carousel-item">
                 <div class="row ">
-                    <div class="noticia__noticias card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
                         <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
                         <div class="card-body">
                             <h3 class="card-title">Noticia</h3>
                             <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
@@ -116,8 +167,24 @@
 <!-- NOTICIA 4 -->
             <div class="carousel-item">
                 <div class="row">
-                    <div class="noticia__noticias card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
                         <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
                         <div class="card-body">
                             <h3 class="card-title">Noticia</h3>
                             <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
@@ -130,8 +197,24 @@
 <!-- NOTICIA 5 -->
             <div class="carousel-item">
                 <div class="row">
-                    <div class="noticia__noticias card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
                         <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
+                        <div class="card-body">
+                            <h3 class="card-title">Noticia</h3>
+                            <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                            <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                        </div>
+                    </div>
+                    <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
+                        <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
                         <div class="card-body">
                             <h3 class="card-title">Noticia</h3>
                             <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
@@ -141,11 +224,11 @@
                 </div>
                 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev pe-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next ps-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -163,41 +246,39 @@
 </main>
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <div class="footer__acercaDe" >
-                    <h3>Sobre esta página</h3>
-                    <p>InfoTkd es un proyecto dedicado exclusivamente a dar a conocer información relevante respecto al Taekwondo, sus principales y últimas noticias.</p>
-                    <p>Como secciones fundamentales, InfoTkd también brinda la teoría necesaria para adquirir conocimientos sobre este deporte.</p>
-                    <p>Es una fuente confiable de información en la que se podrá conocer lo último de lo último, y al mismo tiempo tener la teoría necesaria a mano para estudiar y conocer.</p>
+            <div class="footer__acercaDe col-xs-12 col-md-6 col-lg-6">
+                <h3>Sobre esta página</h3>
+                <p>InfoTkd es un proyecto dedicado exclusivamente a dar a conocer información relevante respecto al Taekwondo, sus principales y últimas noticias.</p>
+                <p>Como secciones fundamentales, InfoTkd también brinda la teoría necesaria para adquirir conocimientos sobre este deporte.</p>
+                <p>Es una fuente confiable de información en la que se podrá conocer lo último de lo último, y al mismo tiempo tener la teoría necesaria a mano para estudiar y conocer.</p>
+            </div>
+            <div class="footer__contacto col-xs-12 col-md-6 col-lg-6">
+                <p>¿Tenés dudas? ¡Contactanos!</p>
+                <p>Teléfono: +54 343-4596964</p>
+                <p>Correo:</p><a href="mailto:olguinesteban20@gmail.com">olguinesteban20@gmail.com</a>
+                <div class="footer__nav col-xs-12 col-md-6 col-lg-6">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com" class="footer__nav-facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" class="footer__nav-twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" class="footer__nav-instagram"><i class="fa-brands fa-instagram"></i><a></a>
+                        </li>
+                    </ul>                   
                 </div>
             </div>
-            <div class="col pt-6">
-                <div class="footer__contacto">
-                    <p>¿Tenés dudas? ¡Contactanos!</p>
-                    <p>Teléfono: +54 343-4596964</p>
-                    <p>Correo:</p><a href="mailto:olguinesteban20@gmail.com">olguinesteban20@gmail.com</a>
-                    <div class="footer__nav">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com" class="footer__nav-facebook"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" class="footer__nav-twitter"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com" class="footer__nav-instagram"><i class="fa-brands fa-instagram"></i><a></a>
-                            </li>
-                        </ul>                   
-                    </div>
-                </div>
-                <div class="footer__copyright">
-                    <hr class="footer__hr">
-                    <p>
-                        &copy; 2022 | Infotkd.com | Todos los derechos reservados.
-                    </p>
-                </div>
+        </div>
+        <div class="row">
+            <div class="footer__copyright col">
+                <hr class="footer__hr">
+                <p>
+                    &copy; 2022 | Infotkd.com | Todos los derechos reservados.
+                </p>
             </div>
         </div>
     </div>
@@ -207,7 +288,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<!-- SCRPT BOOTSTRAP -->
+<!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

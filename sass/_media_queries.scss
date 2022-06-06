@@ -2,23 +2,26 @@
 @media only screen and (max-width:540px) {
 
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
 
-    .nav {
-        margin-top: 1px;
-        padding-top: 4em;
-        li {
-            display: block;
+    .navbar {
+        &__logo {
+            display: none;
         }
     }
 
     .main__titulo {
         display: block;
         text-align: center;
-        font-size: 20px;
         h1 {
-            font-size: 40px;
+            font-size:smaller;
+        }
+    }
+
+    #noticias {
+        h2 {
+            font-size: 14px;
         }
     }
 
@@ -29,34 +32,45 @@
     }
 
     .general-main {
-        display: grid;
-        margin: 4px;
-        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
     }
 
     .crear-cuenta {
-        width: 28em;
+        width: 28rem;
     }
 
-    .footer {
-        display: block;
-        nav {
-            ul {
-                display: flex;
+    footer {
+        padding: 1em;
+        .footer__acercaDe {
+            padding: 1em;
+            h3 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
             }
         }
-        &__contacto {
-            padding-left: 5em;
+        .footer__contacto {
+            padding: 1em;
+            p {
+                font-size: 14px;
+            }
         }
-        hr {
-            margin-top: 1em;
+        .footer__nav {
+            margin-left: 0;
+            margin-right: 1rem;
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
 
 /* TABLET */
-@media only screen and (min-width: 541px) and (max-width: 960px) {
-
+@media only screen and (min-width: 541px) and (max-width: 980px) {
     body {
         font-size: 14px;
     }
@@ -65,8 +79,14 @@
         display: none;
     }
 
-    .nav__ul {
-        font-size: 10px;
+    .navbar {
+        ul {
+            font-size: 10px;
+        }
+
+        &__logo {
+            display: none;
+        }
     }
 
     .main__titulo {
@@ -104,12 +124,15 @@
 
     .footer {
         &__contacto {
-            margin-top: 6em;
+            margin-top: 2em;
             align-items: center;
         }
         &__nav {
             height: 200px;
             width: 300px;
+            padding-right: 0;
+
         }
     }
+
 }
