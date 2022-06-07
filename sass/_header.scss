@@ -11,12 +11,15 @@ header {
             padding-top: 1em;
             padding-right: 2em;
             display: inline-block;
-            a {
+            transition: all 0.3s ease;
+            a{
+                font-size: 18px;
+                text-transform: capitalize;
+                text-decoration: none;
+                font-weight: 300;
+                transition: all 0.3s ease;
                 &:hover {
-                    color: $color-principal;
-                    display: block;
-                    transform: translateY(-4px) scale(1.05);   
-                    transition: .2s;
+                    padding-left: 8px;
                 }
             }
         }
