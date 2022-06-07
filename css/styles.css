@@ -13,15 +13,9 @@ header {
       padding-top: 1em;
       padding-right: 2em;
       display: inline-block;
-      transition: all 0.3s ease; }
-      header nav li .carousel-item {
-        font-size: 18px;
-        text-transform: capitalize;
-        text-decoration: none;
-        font-weight: 300;
-        transition: all 0.3s ease; }
-        header nav li .carousel-item:hover {
-          padding-left: 8px; }
+      transition: all .2s ease; }
+      header nav li:hover {
+        transform: translate(0px, -5px); }
   header hr {
     border: 1px transparent #000; }
 
@@ -78,7 +72,7 @@ header {
       line-height: 40px;
       border-radius: 50%;
       color: #ffffff;
-      transition: all 0.5s ease; }
+      transition: all .5s ease; }
       .footer__redes a:hover {
         color: #24262b;
         background-color: #ffffff; }
