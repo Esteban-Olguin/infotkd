@@ -23,51 +23,52 @@ header {
   color: #fff;
   background-color: #6036a4;
   /* ACERCA DE */
-  /* CONTACTO */
+  /* PAGINAS */
   /* REDES */
+  /* CONTACTO */
   /* COPYRIGHT */ }
   .footer .col {
-    width: 33%;
-    padding: 2rem 1rem 0 1rem;
     list-style: none; }
     .footer .col h3, .footer .col h4 {
       text-align: center;
       font-size: 30px;
       color: #ffffff;
       text-transform: capitalize;
-      margin-bottom: 35px;
+      margin-bottom: 2rem;
       font-weight: 600;
       position: relative; }
   .footer__acercaDe {
-    padding: 2em 4em 2em 4em;
+    padding: 2rem 4rem 2rem 4rem;
     text-align: justify; }
-  .footer__redes-contacto {
+  .footer__paginas {
+    padding-top: 2rem;
+    padding-left: 4rem; }
+    .footer__paginas ul {
+      padding: 0; }
+      .footer__paginas ul li {
+        list-style: none;
+        padding-top: 1.5rem; }
+        .footer__paginas ul li a {
+          font-size: 18px;
+          text-transform: capitalize;
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 300;
+          color: #fff;
+          display: block;
+          transition: all 0.3s ease; }
+          .footer__paginas ul li a:hover {
+            padding-left: 8px;
+            color: #c0bbbb; }
+  .footer__redes {
     text-align: center;
     padding-top: 2rem; }
-    .footer__redes-contacto p {
-      padding-bottom: 10px; }
-  .footer__paginas ul li {
-    list-style: none;
-    padding-top: 1rem; }
-    .footer__paginas ul li a {
-      font-size: 18px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: #fff;
-      display: block;
-      transition: all 0.3s ease; }
-      .footer__paginas ul li a:hover {
-        padding-left: 8px; }
-  .footer__redes {
-    text-align: center; }
     .footer__redes a {
       display: inline-block;
       height: 40px;
       width: 40px;
       background-color: rgba(255, 255, 255, 0.2);
-      margin: 0 10px 10px 0;
+      margin: 1rem 5px 2rem 5px;
       text-align: center;
       line-height: 40px;
       border-radius: 50%;
@@ -76,6 +77,12 @@ header {
       .footer__redes a:hover {
         color: #24262b;
         background-color: #ffffff; }
+  .footer__redes-contacto {
+    text-align: center; }
+    .footer__redes-contacto h4 {
+      padding-bottom: 1rem; }
+    .footer__redes-contacto p {
+      padding-bottom: .5rem; }
   .footer__copyright {
     text-align: center;
     font-size: 14px; }
@@ -83,7 +90,7 @@ header {
       margin-bottom: 10px; }
 
 /* MOBILE */
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 560px) {
   body {
     font-size: 14px; }
   .navbar__logo {
@@ -97,8 +104,6 @@ header {
     font-size: 14px; }
   #noticias .noticias__responsive {
     display: block; }
-  #noticias .noticias {
-    display: none; }
   .teoriaDelTkd p, .teoriaDelTkd h3, .teoriaDelTkd h2, .teoriaDelTkd li {
     font-size: 14px; }
   .general-main {
@@ -106,25 +111,28 @@ header {
     padding: 0; }
   .crear-cuenta {
     width: 28rem; }
-  footer {
+  .footer {
     padding: 1em; }
-    footer .footer__acercaDe {
+    .footer h3 {
+      font-size: 14px; }
+    .footer p {
+      font-size: 14px; }
+    .footer ul li {
+      font-size: 14px; }
+    .footer .col {
+      width: 50%;
+      margin-bottom: 30px; }
+    .footer__acercaDe {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .footer__paginas {
+      padding: 0; }
+      .footer__paginas ul li {
+        padding: 0; }
+    .footer__contacto {
       padding: 1em; }
-      footer .footer__acercaDe h3 {
-        font-size: 14px; }
-      footer .footer__acercaDe p {
-        font-size: 14px; }
-    footer .footer__contacto {
-      padding: 1em; }
-      footer .footer__contacto p {
-        font-size: 14px; }
-    footer .footer__nav {
-      margin-left: 0;
-      margin-right: 1rem; }
-      footer .footer__nav ul li {
-        font-size: 14px; }
-    footer .col {
-      width: 100%; } }
+      .footer__contacto p {
+        font-size: 14px; } }
 
 /* TABLET */
 @media only screen and (min-width: 541px) and (max-width: 980px) {
@@ -147,10 +155,10 @@ header {
     .main__titulo__container h1 {
       font-size: 40px;
       display: block; }
-  .noticias {
-    display: none; }
   .noticias__responsive {
     display: block; }
+  .noticias__principal {
+    display: none; }
   .noticias__noticia {
     height: auto; }
   .teoriaDelTkd {
@@ -159,16 +167,12 @@ header {
     font-size: 1em;
     text-align: justify;
     margin: 1em 2em 2em 2em; }
-  .footer__contacto {
-    margin-top: 2em;
-    align-items: center; }
-  .footer__nav {
-    height: 200px;
-    width: 300px;
-    padding-right: 0; }
   .footer .col {
     width: 50%;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .footer__acercaDe {
+    margin-bottom: 0;
+    padding-bottom: 0; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -405,7 +409,7 @@ a {
 
 /* EXTEND */
 .cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .ingresar__submit, .crear-cuenta__submit {
-  background: #e7ac2b; }
+  background: #3b89ad; }
 
 .cambio-color-hover a:hover, header nav li a:hover, .ingresar a a:hover {
-  color: #e7ac2b; }
+  color: #3b89ad; }
