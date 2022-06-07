@@ -45,8 +45,11 @@ a {
         color: $color-claro;
         font-weight: 600;
     }
-}
 
+    .noticias__responsive {
+        display: none;
+    }
+}
 
 /* HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
