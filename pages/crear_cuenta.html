@@ -66,24 +66,41 @@
     </nav>
 </header>
     <main>
+
         <div class="crear-cuenta animate__animated animate__fadeIn">
-            <img src="../resources/logos/android-chrome-192x192.png" class="ingresar__img" alt="Logo">
-            <form>
-                <h1>Crear cuenta</h1>
-                <!-- NOMBRE -->
-                <label for="text">Ingresá tu nombre y apellido</label>
-                <input class="crear-cuenta__text" type="text" name="text" placeholder="Nombre y apellido">
-                <!-- CORREO -->
-                <label for="text">Ingresá tu correo</label>
-                <input class="crear-cuenta__text" type="text" name="text" placeholder="Correo Electrónico">
-                <!-- CONTRASEÑA -->
-                <label for="password">Ingresá una contraseña</label>
-                <input class="crear-cuenta__password" type="password" name="password" placeholder="Contraseña">
-                <label for="password">Ingresá una contraseña nuevamente</label>
-                <input class="crear-cuenta__password" type="password" name="password" placeholder="Contraseña">
-                <input class="crear-cuenta__submit" type="submit" value="Crear cuenta">
+
+            <form class="form">
+                
+                <h1 class="form__titulo">Crear cuenta</h1>
+                <div class="form__container">
+                    <div class="form__grupo row">
+                        <div class="col">
+                            <label class="form__label" for="nombre"></label>
+                        <input class="form__input" type="text" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <label class="form__label" for="apellido"></label>
+                            <input class="form__input" type="text" id="apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="form__grupo">
+                        <label class="form__label" for="correo"></label>
+                        <input class="form__input" type="text" id="correo" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form__grupo">
+                        <label class="form__label" for="password"></label>
+                        <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña">
+                    </div>
+                    <div class="form__grupo">
+                        <label class="form__label" for="password"></label>
+                        <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña nuevamente">
+                    </div>
+                    <input class="form__submit" type="submit" value="Crear cuenta">
+                </div>
             </form>
+    
         </div>
+
     </main>
     <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/84d1de6f8d.js" crossorigin="anonymous"></script>

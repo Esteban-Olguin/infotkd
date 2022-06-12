@@ -38,8 +38,7 @@ header {
       font-weight: 600;
       position: relative; }
   .footer__acercaDe {
-    padding: 2rem 4rem 2rem 4rem;
-    text-align: justify; }
+    padding: 2rem 4rem 2rem 4rem; }
   .footer__paginas {
     padding-top: 2rem;
     padding-left: 4rem; }
@@ -93,49 +92,45 @@ header {
 @media only screen and (max-width: 560px) {
   body {
     font-size: 14px; }
-  .navbar__logo {
+  .noticias__principal {
     display: none; }
-  .main__titulo {
-    display: block;
-    text-align: center; }
-    .main__titulo h1 {
-      font-size: smaller; }
+  .noticias__responsive {
+    display: block; }
+  .main__titulo .text-center {
+    font-size: 40px; }
   #noticias h2 {
     font-size: 14px; }
-  #noticias .noticias__responsive {
-    display: block; }
   .teoriaDelTkd p, .teoriaDelTkd h3, .teoriaDelTkd h2, .teoriaDelTkd li {
     font-size: 14px; }
-  .general-main {
+  .general__main {
     margin: 0;
-    padding: 0; }
-  .crear-cuenta {
-    width: 28rem; }
+    padding: 0;
+    font-size: 25px; }
+    .general__main h1 {
+      font-size: 20px; }
   .footer {
-    padding: 1em; }
-    .footer h3 {
-      font-size: 14px; }
-    .footer p {
-      font-size: 14px; }
-    .footer ul li {
-      font-size: 14px; }
+    text-align: left;
+    font-size: 16px; }
     .footer .col {
       width: 50%;
       margin-bottom: 30px; }
     .footer__acercaDe {
-      margin-bottom: 0;
-      padding-bottom: 0; }
+      padding: 1rem 1rem 0 1rem; }
     .footer__paginas {
-      padding: 0; }
+      padding-left: 1rem; }
       .footer__paginas ul li {
-        padding: 0; }
-    .footer__contacto {
-      padding: 1em; }
-      .footer__contacto p {
-        font-size: 14px; } }
+        text-align: left; }
+    .footer__redes {
+      padding-left: 1rem;
+      margin: 1rem 1rem 0 0;
+      text-align: left; }
+      .footer__redes p {
+        font-size: 14px; }
+      .footer__redes-contacto {
+        text-align: left; } }
 
 /* TABLET */
-@media only screen and (min-width: 541px) and (max-width: 980px) {
+@media only screen and (min-width: 561px) and (max-width: 980px) {
   body {
     font-size: 14px; }
   .header__hr {
@@ -163,9 +158,8 @@ header {
     height: auto; }
   .teoriaDelTkd {
     font-size: 10px; }
-  .general-main {
-    font-size: 1em;
-    text-align: justify;
+  .general__main {
+    font-size: 25px;
     margin: 1em 2em 2em 2em; }
   .footer .col {
     width: 50%;
@@ -253,9 +247,10 @@ a {
 
 /* BIBLIOGRAFÍA DEL GENERAL CHOI */
 .general__main {
-  font-size: 1em;
+  color: #000;
+  font-size: 16px;
   text-align: justify;
-  margin: 1em 8em 2em 8em; }
+  margin: 1em 3em 2em 3em; }
   .general__main h1 {
     color: #fff;
     text-align: center;
@@ -268,9 +263,8 @@ a {
   float: left;
   height: 20em;
   width: 15em;
-  margin-right: 1em;
-  margin-bottom: .5em;
-  margin-left: .5em; }
+  margin-right: 2em;
+  margin-bottom: .5em; }
 
 .general span {
   font-size: .8rem;
@@ -279,137 +273,68 @@ a {
 
 /* INGRESAR */
 .ingresar {
-  margin-top: 4em;
-  width: 320px;
-  height: 420px;
-  background: #fff;
-  color: #000;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  border: 1px solid #000; }
-  .ingresar__img {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px); }
-  .ingresar h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px; }
-  .ingresar label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block; }
-  .ingresar input {
+  display: flex;
+  padding-top: 3.5rem; }
+
+.form {
+  margin: auto;
+  padding: 1rem 3rem;
+  border: 1px solid #000;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2); }
+  .form__titulo {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    text-align: center; }
+  .form__p {
+    font-weight: 300; }
+  .form__container {
+    margin-top: 3rem;
+    display: grid; }
+  .form__grupo {
+    position: relative;
+    color: #000;
+    margin-bottom: 1rem; }
+  .form__input {
     width: 100%;
-    margin-bottom: 20px; }
-  .ingresar__text {
+    background: none;
+    color: #776f6f;
+    font-size: 1rem;
+    padding: .6rem .3rem;
     border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
     outline: none;
-    height: 40px;
-    color: #000;
-    font-size: 16px; }
-  .ingresar__password {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #000;
-    font-size: 16px; }
-  .ingresar__submit {
+    border-bottom: 1px solid #776f6f; }
+  .form__reset-password {
+    padding-bottom: 0; }
+  .form__submit {
+    margin: 0 0 1rem 0;
     border: none;
     outline: none;
     height: 40px;
-    background: #6036a4;
+    background-color: #6036a4;
     color: #fff;
-    font-size: 18px;
-    border-radius: 20px; }
-    .ingresar__submit:hover {
-      cursor: pointer; }
-  .ingresar a {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 20px;
-    color: #000; }
-    .ingresar a:hover {
-      color: #494242; }
+    transition: all .2s ease; }
+    .form__submit:hover {
+      transform: translate(0px, -2px);
+      box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3); }
 
 /* CREAR CUENTA */
 .crear-cuenta {
-  margin-top: 4rem;
-  width: 40%;
-  height: 80px;
-  background: #fff;
-  color: #000;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px 430px 30px;
-  border: 1px solid #000; }
-  .crear-cuenta h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px; }
-  .crear-cuenta label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block; }
-  .crear-cuenta input {
-    width: 100%;
-    margin-bottom: 20px; }
-  .crear-cuenta__text {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #000;
-    font-size: 16px; }
-  .crear-cuenta__password {
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #000;
-    font-size: 16px; }
-  .crear-cuenta__submit {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #6036a4;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px; }
-    .crear-cuenta__submit:hover {
-      cursor: pointer; }
-  .crear-cuenta a {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 20px;
-    color: #000; }
-    .crear-cuenta a:hover {
-      color: #494242; }
+  padding-top: 5rem;
+  padding: 0 2rem; }
+  .crear-cuenta .form {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    width: 90%; }
+    .crear-cuenta .form__container {
+      margin-top: 1rem; }
+    .crear-cuenta .form__titulo {
+      margin-bottom: .2rem; }
 
 /* EXTEND */
-.cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .ingresar__submit, .crear-cuenta__submit {
+.cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .form__submit {
   background: #3b89ad; }
 
-.cambio-color-hover a:hover, header nav li a:hover, .ingresar a a:hover {
+.cambio-color-hover a:hover, header nav li a:hover {
   color: #3b89ad; }

@@ -109,9 +109,10 @@ a {
 /* BIBLIOGRAFÍA DEL GENERAL CHOI */
 .general {
     &__main {
-        font-size: 1em;
+        color: $color-oscuro;
+        font-size: 16px;
         text-align: justify;
-        margin: 1em 8em 2em 8em;
+        margin: 1em 3em 2em 3em;
         h1 {
             @extend .cambio-color;
             color: $color-claro;
@@ -126,9 +127,8 @@ a {
         float: left;
         height: 20em;
         width: 15em;
-        margin-right: 1em;
+        margin-right: 2em;
         margin-bottom: .5em;
-        margin-left: .5em;
     }
     span {
         font-size: .8rem;
@@ -138,158 +138,92 @@ a {
 }
 
 /* INGRESAR */
+
 .ingresar {
-    margin-top: 4em;
-    width: 320px;
-    height: 420px;
-    background: $color-claro;
-    color: $color-oscuro;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+    display: flex;
+    padding-top: 3.5rem;
+}
+
+.form {
+    margin: auto;
+    padding: 1rem 3rem;
     border: 1px solid #000;
-    &__img {
-        width: 100px;
-        height: 100px;
-        border: 2px solid #000;
-        border-radius: 50%;
-        position: absolute;
-        top: -50px;
-        left: calc(50% - 50px);
-    }
-    h1 {
-        margin: 0;
-        padding: 0 0 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,.2);
+
+    &__titulo {
+        font-size: 2rem;
+        margin-bottom: .5rem;
         text-align: center;
-        font-size: 22px;
     }
-    label {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        display: block;
+
+    &__p {
+        font-weight: 300;
     }
-    input {
+
+    &__container {
+        margin-top: 3rem;
+        display: grid;
+    }
+
+    &__grupo {
+        position: relative;
+        color: $color-oscuro;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
         width: 100%;
-        margin-bottom: 20px;
-    }
-    &__text {
+        background: none;
+        color:rgb(119, 111, 111);
+        font-size: 1rem;
+        padding: .6rem .3rem;
         border: none;
-        border-bottom: 1px solid #000;
-        background: transparent;
         outline: none;
-        height: 40px;
-        color: $color-oscuro;
-        font-size: 16px;
+        border-bottom: 1px solid rgb(119, 111, 111);
     }
-    &__password {
-        border: none;
-        border-bottom: 1px solid #000;
-        background: transparent;
-        outline: none;
-        height: 40px;
-        color: $color-oscuro;
-        font-size: 16px;
+
+    &__reset-password {
+        padding-bottom: 0;
     }
+
     &__submit {
         @extend .cambio-color;
+        margin: 0 0 1rem 0;
         border: none;
         outline: none;
         height: 40px;
-        background: $color-principal;
+        background-color: $color-principal;
         color: $color-claro;
-        font-size: 18px;
-        border-radius: 20px;
+        transition: all .2s ease;
         &:hover {
-            cursor: pointer;
-        }
-    }
-    a {
-        @extend .cambio-color-hover;
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 20px;
-        color: $color-oscuro;
-        &:hover {
-            color: rgb(73, 66, 66);
+            transform: translate(0px, -2px);
+            box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3);
         }
     }
 }
 
 /* CREAR CUENTA */
 .crear-cuenta {
-    margin-top: 4rem;
-    width: 40%;
-    height: 80px;
-    background: $color-claro;
-    color: $color-oscuro;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px 430px 30px;
-    border: 1px solid #000;
-    h1 {
-        margin: 0;
-        padding: 0 0 20px;
-        text-align: center;
-        font-size: 22px;
-    }
-    label {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        display: block;
-    }
-    input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    &__text {
-        border: none;
-        border-bottom: 1px solid #000;
-        background: transparent;
-        outline: none;
-        height: 40px;
-        color: $color-oscuro;
-        font-size: 16px;
-    }
-    &__password {
-        border: none;
-        border-bottom: 1px solid #000;
-        background: transparent;
-        outline: none;
-        height: 40px;
-        color: $color-oscuro;
-        font-size: 16px;
-    }
-    &__submit {
-        @extend .cambio-color;
-        border: none;
-        outline: none;
-        height: 40px;
-        background: $color-principal;
-        color: $color-claro;
-        font-size: 18px;
-        border-radius: 20px;
-        &:hover {
-            cursor: pointer;
+    padding-top: 5rem;
+    padding: 0 2rem;
+
+    .form {
+        margin-top: 2rem;
+        padding: 0 2rem;
+        width: 90%;
+
+        &__container {
+            margin-top: 1rem;
         }
-    }
-    a {
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 20px;
-        color: $color-oscuro;
-        &:hover {
-            color: rgb(73, 66, 66);
+
+        &__titulo {
+            margin-bottom: .2rem;
         }
     }
 }
+
 
 /* EXTEND */
 .cambio-color {
