@@ -88,6 +88,11 @@ header {
     .footer__copyright hr {
       margin-bottom: 10px; }
 
+/* DESKTOP */
+@media only screen and (min-width: 560px) and (max-width: 4000px) {
+  .noticias__responsive {
+    display: none; } }
+
 /* MOBILE */
 @media only screen and (max-width: 560px) {
   body {
@@ -150,10 +155,10 @@ header {
     .main__titulo__container h1 {
       font-size: 40px;
       display: block; }
-  .noticias__responsive {
-    display: block; }
   .noticias__principal {
     display: none; }
+  .noticias__responsive {
+    display: block; }
   .noticias__noticia {
     height: auto; }
   .teoriaDelTkd {
@@ -203,8 +208,23 @@ a {
     padding-left: 1em;
     color: #fff;
     font-weight: 600; }
-  #noticias .noticias__responsive {
-    display: none; }
+  #noticias .noticia__noticias {
+    width: 18rem;
+    margin: 2rem 0;
+    padding: 0;
+    border: none;
+    border-radius: 0; }
+    #noticias .noticia__noticias img {
+      border-radius: 0; }
+    #noticias .noticia__noticias button {
+      border-radius: 0; }
+      #noticias .noticia__noticias button:hover {
+        color: #fff; }
+  #noticias .card {
+    cursor: pointer;
+    transition: all .2s ease; }
+    #noticias .card:hover {
+      transform: translate(0px, -6px); }
 
 /* HISTORIA DEL TAEKWONDO */
 .historiaDelTkd {
@@ -227,13 +247,12 @@ a {
   margin-bottom: 2em; }
   .teoriaDelTkd .teoria {
     font-size: 16px;
-    text-align: justify;
     display: block;
     margin: 1em 2em 0 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid #c0b8b8; }
     .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3 {
-      font-size: 30px; }
+      font-size: 25px; }
     .teoriaDelTkd .teoria ul li {
       margin-left: .5em; }
     .teoriaDelTkd .teoria ol li {

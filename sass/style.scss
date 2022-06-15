@@ -46,8 +46,30 @@ a {
         font-weight: 600;
     }
 
-    .noticias__responsive {
-        display: none;
+    .noticia__noticias {
+        width: 18rem;
+        margin: 2rem 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        img {
+            border-radius: 0;
+        }
+        button {
+            border-radius: 0;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+
+    .card {
+        cursor: pointer;
+        transition: all .2s ease;
+        &:hover {
+            transform: translate(0px, -6px);
+        }
     }
 }
 
@@ -76,14 +98,13 @@ a {
     margin-bottom: 2em;
     .teoria {
         font-size: 16px;
-        text-align: justify;
         display: block;
         margin: 1em 2em 0 2em;
         padding-bottom: 1em;
         border-bottom: 1px solid #c0b8b8;
         h1, h2, h3 {
             @extend .cambio-color;
-            font-size: 30px;
+            font-size: 25px;
         }
         ul {
             li {

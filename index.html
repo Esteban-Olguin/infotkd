@@ -29,7 +29,7 @@
 <!-- NAVEGACIÓN -->
 <header class="header">
 
-    <nav class="navbar navbar-expand-lg"  id="inicio"-xs-12 col-md-12 col>
+    <nav class="navbar navbar-expand-lg text-bg-light p-3"  id="inicio"-xs-12 col-md-12 col>
         <div class="container-fluid ps-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,8 +61,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 rounded-0" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn rounded-0" type="submit">Buscar</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -81,77 +81,172 @@
 
     <section id="noticias" data-aos="fade-up">
 
-<!--NOTICIAS RESPONSIVE-->
-        <div class="noticias__responsive">
+<!-- NOTICIAS PRINCIPAL -->
+        <div class="noticias__principal">
             <h2>DESTACADOS DEL TAEKWONDO</h2>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
-<!-- NOTICIA 1 -->
+        <!-- NOTICIA 1 -->
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card w-25 mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
+                            <!-- Sub noticia 5 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia5.jpg" class="card-img-top" alt="Noticia 5">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info ">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 1 -->
+                            <div class="noticia__noticias card w-25 mx-1">
+                                <img src="./resources/img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 2 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-<!-- NOTICIA 2 -->
+        <!-- NOTICIA 2 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card w-25 mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
+                            <!-- Sub noticia 1 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 2 -->
+                            <div class="noticia__noticias card w-25 mx-1">
+                                <img src="./resources/img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 3 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia3.jpg" class="card-img-top" alt="Noticia 3Este es un texto genérico para esta noticia. No redirige a ningún lado.">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-<!-- NOTICIA 3 --> 
+        <!-- NOTICIA 3 --> 
                     <div class="carousel-item">
                         <div class="row ">
-                            <div class="noticia__noticias--destacada card w-25 mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3">
+                            <!-- Sub noticia 2 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 3 -->
+                            <div class="noticia__noticias card w-25 mx-1">
+                                <img src="./resources/img/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 3 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia4.jpg" class="card-img-top" alt="Noticia 4">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-<!-- NOTICIA 4 -->
+        <!-- NOTICIA 4 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card w-25 mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
+                            <!-- Sub noticia 3 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia3.jpg" class="card-img-top" alt="Noticia 3">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 4 -->
+                            <div class="noticia__noticias card w-25 mx-1">
+                                <img src="./resources/img/noticia4.jpg" class="card-img-top" alt="Noticia 4">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 5 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia5.jpg" class="card-img-top" alt="Noticia 5">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-<!-- NOTICIA 5 -->
+        <!-- NOTICIA 5 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card w-25 mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
+                            <!-- Sub noticia 4 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia4.jpg" class="card-img-top" alt="Noticia 4">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 5 -->
+                            <div class="noticia__noticias card w-25 mx-1">
+                                <img src="./resources/img/noticia5.jpg" class="card-img-top" alt="Noticia 5">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
+                                </div>
+                            </div>
+                            <!-- Sub noticia 1 -->
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                                <div class="card-body">
+                                    <h3 class="card-title">Noticia</h3>
+                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
@@ -168,166 +263,88 @@
             </div>
         </div>
 
-<!-- NOTICIAS PRINCIPAL -->
-        <div class="noticias__principal">
+<!--NOTICIAS RESPONSIVE-->
+        <div class="noticias__responsive row m-0">
             <h2>DESTACADOS DEL TAEKWONDO</h2>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-
-        <!-- NOTICIA 1 -->
+                
+                <div class="col">
+                    <!-- NOTICIA 1 -->
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-        <!-- NOTICIA 2 -->
+    <!-- NOTICIA 2 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3Este es un texto genérico para esta noticia. No redirige a ningún lado.">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-        <!-- NOTICIA 3 --> 
+    <!-- NOTICIA 3 --> 
                     <div class="carousel-item">
                         <div class="row ">
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia2.jpg" class="card-img-top rounded-0" alt="Noticia 2">
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia3.jpg" class="card-img-top" alt="Noticia 3">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-        <!-- NOTICIA 4 -->
+    <!-- NOTICIA 4 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia3.jpg" class="card-img-top rounded-0" alt="Noticia 3">
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia4.jpg" class="card-img-top" alt="Noticia 4">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-        <!-- NOTICIA 5 -->
+    <!-- NOTICIA 5 -->
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia4.jpg" class="card-img-top rounded-0" alt="Noticia 4">
+                            <div class="noticia__noticias card mx-auto">
+                                <img src="./resources/img/noticia5.jpg" class="card-img-top" alt="Noticia 5">
                                 <div class="card-body">
                                     <h3 class="card-title">Noticia</h3>
                                     <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card w-25 mx-1 mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia5.jpg" class="card-img-top rounded-0" alt="Noticia 5">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
-                                </div>
-                            </div>
-                            <div class="noticia__noticias--destacada card mx-auto mt-5 mb-5 p-0 border-0 rounded-0" style="width: 18rem;">
-                                <img src="./resources/img/noticia1.jpg" class="card-img-top rounded-0" alt="Noticia 1">
-                                <div class="card-body">
-                                    <h3 class="card-title">Noticia</h3>
-                                    <p class="card-text">Este es un texto genérico para esta noticia. No redirige a ningún lado.</p>
-                                    <button class="btn btn-primary rounded-0">Ir a la noticia</button>
+                                    <button class="btn btn-outline-info">Ir a la noticia</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev pe-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                </div>
+                    <button class="carousel-control-prev pe-4" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next ps-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <button class="carousel-control-next ps-4" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
