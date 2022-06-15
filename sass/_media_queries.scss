@@ -1,5 +1,9 @@
 /* DESKTOP */
 @media only screen and (min-width:560px) and (max-width: 4000px) {
+    .navbar__start {
+        padding-left: 1rem;
+    }
+    
     .noticias__responsive {
         display: none;
     }
@@ -7,17 +11,14 @@
 
 /* MOBILE */
 @media only screen and (max-width:560px) {
+    .navbar {
+        &__logo {
+            display: none;
+        }
 
-    body {
-        font-size: 14px;
-    }
-
-    .noticias__principal {
-        display: none;
-    }
-
-    .noticias__responsive {
-        display: block;
+        &__start {
+            padding-left: 0;
+        }
     }
 
     .main__titulo {
@@ -29,13 +30,20 @@
 
     #noticias {
         h2 {
-            font-size: 14px;
+            font-size: 20px;
+        }
+
+        .noticias__principal {
+            display: none;
+            .noticias__responsive {
+                display: block;
+            }
         }
     }
 
     .teoriaDelTkd {
         p, h3, h2, li {
-            font-size: 14px;
+            font-size: 20px;
         }
     }
 
@@ -47,7 +55,7 @@
         h1 {
             font-size: 20px;
         }
-}
+    }
 
     .footer {
         text-align: left;
@@ -86,13 +94,9 @@
 }
 
 /* TABLET */
-@media only screen and (min-width: 561px) and (max-width: 980px) {
+@media only screen and (min-width: 561px) and (max-width: 990px) {
     body {
         font-size: 14px;
-    }
-
-    .header__hr {
-        display: none;
     }
 
     .navbar {
@@ -102,6 +106,10 @@
 
         &__logo {
             display: none;
+        }
+
+        &__start {
+            padding-left: 0;
         }
     }
 
@@ -116,6 +124,7 @@
                 height: 200px;
             }
         }
+
         &__container {
             h1 {
                 font-size: 40px;
@@ -131,13 +140,9 @@
     .noticias__responsive {
         display: block;
     }
-    
-    .noticias__noticia {
-        height: auto;
-    }
 
     .teoriaDelTkd {
-        font-size: 10px;
+        font-size: 25px;
     }
 
     .general__main {

@@ -8,16 +8,30 @@ header {
   header nav {
     background-color: #fff;
     margin-bottom: .4rem; }
-    header nav li {
+    header nav .navbar__logo {
+      text-decoration: none;
+      list-style: none;
+      padding-right: 1rem;
+      padding-bottom: .4rem;
+      padding-left: 0;
+      margin-top: 1rem;
+      border-right: 1px solid #c5c0c0; }
+    header nav .navbar__li {
       font-weight: 600;
       padding-top: 1em;
       padding-right: 2em;
       display: inline-block;
       transition: all .2s ease; }
-      header nav li:hover {
+      header nav .navbar__li:hover {
         transform: translate(0px, -5px); }
-  header hr {
-    border: 1px transparent #000; }
+    header nav .navbar-toggler, header nav .form-control, header nav .btn {
+      border-radius: 0;
+      color: #fff; }
+    header nav .btn {
+      transition: all .2s ease; }
+      header nav .btn:hover {
+        color: #fff;
+        transform: translate(0px, -1px); }
 
 .footer {
   color: #fff;
@@ -84,29 +98,33 @@ header {
       padding-bottom: .5rem; }
   .footer__copyright {
     text-align: center;
-    font-size: 14px; }
-    .footer__copyright hr {
-      margin-bottom: 10px; }
+    font-size: 14px;
+    padding-top: 1rem;
+    border-top: 1px solid #cccdcf; }
 
 /* DESKTOP */
 @media only screen and (min-width: 560px) and (max-width: 4000px) {
+  .navbar__start {
+    padding-left: 1rem; }
   .noticias__responsive {
     display: none; } }
 
 /* MOBILE */
 @media only screen and (max-width: 560px) {
-  body {
-    font-size: 14px; }
-  .noticias__principal {
+  .navbar__logo {
     display: none; }
-  .noticias__responsive {
-    display: block; }
+  .navbar__start {
+    padding-left: 0; }
   .main__titulo .text-center {
     font-size: 40px; }
   #noticias h2 {
-    font-size: 14px; }
+    font-size: 20px; }
+  #noticias .noticias__principal {
+    display: none; }
+    #noticias .noticias__principal .noticias__responsive {
+      display: block; }
   .teoriaDelTkd p, .teoriaDelTkd h3, .teoriaDelTkd h2, .teoriaDelTkd li {
-    font-size: 14px; }
+    font-size: 20px; }
   .general__main {
     margin: 0;
     padding: 0;
@@ -135,15 +153,15 @@ header {
         text-align: left; } }
 
 /* TABLET */
-@media only screen and (min-width: 561px) and (max-width: 980px) {
+@media only screen and (min-width: 561px) and (max-width: 990px) {
   body {
     font-size: 14px; }
-  .header__hr {
-    display: none; }
   .navbar ul {
     font-size: 10px; }
   .navbar__logo {
     display: none; }
+  .navbar__start {
+    padding-left: 0; }
   .main__titulo {
     display: block;
     margin-top: 2em;
@@ -159,10 +177,8 @@ header {
     display: none; }
   .noticias__responsive {
     display: block; }
-  .noticias__noticia {
-    height: auto; }
   .teoriaDelTkd {
-    font-size: 10px; }
+    font-size: 25px; }
   .general__main {
     font-size: 25px;
     margin: 1em 2em 2em 2em; }
@@ -244,7 +260,8 @@ a {
 
 /* TEORIA DEL TAEKWONDO */
 .teoriaDelTkd {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  padding-top: 2rem; }
   .teoriaDelTkd .teoria {
     font-size: 16px;
     display: block;
@@ -269,31 +286,28 @@ a {
   color: #000;
   font-size: 16px;
   text-align: justify;
-  margin: 1em 3em 2em 3em; }
+  margin: 1em 3em 2em 3em;
+  padding-top: 2rem; }
   .general__main h1 {
     color: #fff;
     text-align: center;
     background: #6036a4; }
-
-.general p {
-  margin: 1em; }
-
-.general__img {
-  float: left;
-  height: 20em;
-  width: 15em;
-  margin-right: 2em;
-  margin-bottom: .5em; }
-
-.general span {
-  font-size: .8rem;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: center; }
+  .general__main .general__img {
+    float: left;
+    padding-right: 1rem; }
+  .general__main p {
+    margin: 1em; }
+  .general__main__img {
+    height: 20em;
+    width: 15em;
+    margin-right: 2em;
+    margin-bottom: .5em; }
 
 /* INGRESAR */
 .ingresar {
   display: flex;
-  padding-top: 3.5rem; }
+  padding-top: 3.5rem;
+  padding-bottom: 4.3rem; }
 
 .form {
   margin: auto;
@@ -335,13 +349,11 @@ a {
     color: #fff;
     transition: all .2s ease; }
     .form__submit:hover {
-      transform: translate(0px, -2px);
-      box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3); }
+      transform: translate(0px, -2px); }
 
 /* CREAR CUENTA */
 .crear-cuenta {
-  padding-top: 5rem;
-  padding: 0 2rem; }
+  padding: 2rem 2rem 4rem 2rem; }
   .crear-cuenta .form {
     margin-top: 2rem;
     padding: 0 2rem;
@@ -355,5 +367,5 @@ a {
 .cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .form__submit {
   background: #3b89ad; }
 
-.cambio-color-hover a:hover, header nav li a:hover {
+.cambio-color-hover a:hover, header nav .navbar__li a:hover {
   color: #3b89ad; }

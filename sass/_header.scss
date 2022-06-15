@@ -5,20 +5,42 @@ header {
     nav {
         background-color: $color-claro;
         margin-bottom: .4rem;
-        li {
-            @extend .cambio-color-hover;
-            font-weight: 600;
-            padding-top: 1em;
-            padding-right: 2em;
-            display: inline-block;
-            transition: all .2s ease;
-            &:hover {
-                transform: translate(0px, -5px);
+
+        .navbar {
+            &__logo {
+                text-decoration: none;
+                list-style: none;
+                padding-right: 1rem;
+                padding-bottom: .4rem;
+                padding-left: 0;
+                margin-top: 1rem;
+                border-right: 1px solid rgb(197, 192, 192);
+            }
+
+            &__li {
+                @extend .cambio-color-hover;
+                font-weight: 600;
+                padding-top: 1em;
+                padding-right: 2em;
+                display: inline-block;
+                transition: all .2s ease;
+                &:hover {
+                    transform: translate(0px, -5px);
+                }
             }
         }
-    }
-    
-    hr {
-        border: 1px transparent #000;
+        
+        .navbar-toggler, .form-control, .btn {
+            border-radius: 0;
+            color: #fff;
+        }
+
+        .btn {
+            transition: all .2s ease;
+            &:hover {
+                color: #fff;
+                transform: translate(0px, -1px);
+            }
+        }
     }
 }
