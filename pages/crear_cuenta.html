@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn">
 
 <!-- NAVEGACIÓN -->
 <header class="header">
@@ -69,36 +69,34 @@
 </header>
 
 <main>
-    <div class="crear-cuenta animate__animated animate__fadeIn">
-        <form class="form">
-            <h1 class="form__titulo">Crear cuenta</h1>
-            <div class="form__container">
-                <div class="form__grupo row">
-                    <div class="col">
-                        <label class="form__label" for="nombre"></label>
-                    <input class="form__input" type="text" id="nombre" placeholder="Nombre">
-                    </div>
-                    <div class="col">
-                        <label class="form__label" for="apellido"></label>
-                        <input class="form__input" type="text" id="apellido" placeholder="Apellido">
-                    </div>
+    <form class="form">
+        <h1 class="form__titulo">Crear cuenta</h1>
+        <div class="form__container">
+            <div class="form__grupo row">
+                <div class="col">
+                    <label class="form__label" for="nombre"></label>
+                <input class="form__input" type="text" id="nombre" placeholder="Nombre">
                 </div>
-                <div class="form__grupo">
-                    <label class="form__label" for="correo"></label>
-                    <input class="form__input" type="text" id="correo" placeholder="Correo electrónico">
+                <div class="col">
+                    <label class="form__label" for="apellido"></label>
+                    <input class="form__input" type="text" id="apellido" placeholder="Apellido">
                 </div>
-                <div class="form__grupo">
-                    <label class="form__label" for="password"></label>
-                    <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña">
-                </div>
-                <div class="form__grupo">
-                    <label class="form__label" for="password"></label>
-                    <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña nuevamente">
-                </div>
-                <input class="form__submit" type="submit" value="Crear cuenta">
             </div>
-        </form>
-    </div>
+            <div class="form__grupo">
+                <label class="form__label" for="correo"></label>
+                <input class="form__input" type="text" id="correo" placeholder="Correo electrónico">
+            </div>
+            <div class="form__grupo">
+                <label class="form__label" for="password"></label>
+                <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña">
+            </div>
+            <div class="form__grupo">
+                <label class="form__label" for="password"></label>
+                <input class="form__input" type="password" id="password" placeholder="Ingresa una contraseña nuevamente">
+            </div>
+            <input class="form__submit" type="submit" value="Crear cuenta">
+        </div>
+    </form>
 </main>
 
 <!-- FOOTER -->

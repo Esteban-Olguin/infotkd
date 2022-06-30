@@ -286,22 +286,34 @@ a {
   color: #000;
   font-size: 16px;
   text-align: justify;
-  margin: 1em 3em 2em 3em;
+  margin: 1em 8em 2em 8em;
   padding-top: 2rem; }
   .general__main h1 {
     color: #fff;
     text-align: center;
     background: #6036a4; }
+  .general__main h2 {
+    color: #fff;
+    background: #6036a4;
+    font-size: 25px;
+    padding: 5px;
+    margin: 1rem 0; }
+  .general__main p {
+    text-align: justify; }
   .general__main .general__img {
     float: left;
     padding-right: 1rem; }
-  .general__main p {
-    margin: 1em; }
   .general__main__img {
     height: 20em;
     width: 15em;
     margin-right: 2em;
     margin-bottom: .5em; }
+
+.general__img2 {
+  display: flex;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: .2rem; }
 
 /* INGRESAR */
 .ingresar {
@@ -312,14 +324,15 @@ a {
 .form {
   margin: 4rem auto;
   padding: 1rem 3rem;
-  border: 1px solid #000;
+  border: 1px solid #3b89ad;
   width: 90%;
   max-width: 400px;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2); }
   .form__titulo {
     font-size: 2rem;
     margin-bottom: .5rem;
-    text-align: center; }
+    text-align: center;
+    color: #3b89ad; }
   .form__p {
     font-weight: 300; }
   .form__container {
@@ -363,7 +376,7 @@ a {
       margin-bottom: .2rem; }
 
 /* EXTEND */
-.cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .form__submit {
+.cambio-color, .footer, #noticias, .teoriaDelTkd .teoria h1, .teoriaDelTkd .teoria h2, .teoriaDelTkd .teoria h3, .general__main h1, .general__main h2, .form__submit {
   background: #3b89ad; }
 
 .cambio-color-hover a:hover, header nav .navbar__li a:hover {
