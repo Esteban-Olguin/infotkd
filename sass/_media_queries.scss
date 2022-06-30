@@ -7,6 +7,37 @@
     .noticias__responsive {
         display: none;
     }
+
+    .general {
+        &__main {
+                margin: 1em 16em 2em 16em;
+                padding-top: 2rem;
+            }
+
+        
+    &__img {
+        float: left;
+        padding-right: 1rem;
+    }
+
+    &__img {
+        height: 20em;
+        width: 15em;
+        margin-right: 2em;
+        margin-bottom: .5em;
+    }
+
+    &__img2 {
+        display: flex;
+        float:right;
+        margin-left: 1rem;
+        margin-bottom: .2rem;
+    }
+    }
+
+    
+
+
 }
 
 /* MOBILE */
@@ -31,6 +62,8 @@
     #noticias {
         h2 {
             font-size: 20px;
+            text-align: center;
+            margin: auto;
         }
 
         .noticias__principal {
@@ -48,7 +81,7 @@
     }
 
     .general__main {
-        margin: 0;
+        margin: 3rem;
         padding: 0;
         font-size: 25px;
 

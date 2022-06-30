@@ -107,7 +107,23 @@ header {
   .navbar__start {
     padding-left: 1rem; }
   .noticias__responsive {
-    display: none; } }
+    display: none; }
+  .general__main {
+    margin: 1em 16em 2em 16em;
+    padding-top: 2rem; }
+  .general__img {
+    float: left;
+    padding-right: 1rem; }
+  .general__img {
+    height: 20em;
+    width: 15em;
+    margin-right: 2em;
+    margin-bottom: .5em; }
+  .general__img2 {
+    display: flex;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: .2rem; } }
 
 /* MOBILE */
 @media only screen and (max-width: 560px) {
@@ -118,7 +134,9 @@ header {
   .main__titulo .text-center {
     font-size: 40px; }
   #noticias h2 {
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    margin: auto; }
   #noticias .noticias__principal {
     display: none; }
     #noticias .noticias__principal .noticias__responsive {
@@ -126,7 +144,7 @@ header {
   .teoriaDelTkd p, .teoriaDelTkd h3, .teoriaDelTkd h2, .teoriaDelTkd li {
     font-size: 20px; }
   .general__main {
-    margin: 0;
+    margin: 3rem;
     padding: 0;
     font-size: 25px; }
     .general__main h1 {
@@ -285,9 +303,7 @@ a {
 .general__main {
   color: #000;
   font-size: 16px;
-  text-align: justify;
-  margin: 1em 16em 2em 16em;
-  padding-top: 2rem; }
+  text-align: justify; }
   .general__main h1 {
     color: #fff;
     text-align: center;
@@ -301,22 +317,6 @@ a {
   .general__main p {
     text-align: justify; }
 
-.general__img {
-  float: left;
-  padding-right: 1rem; }
-
-.general__img {
-  height: 20em;
-  width: 15em;
-  margin-right: 2em;
-  margin-bottom: .5em; }
-
-.general__img2 {
-  display: flex;
-  float: right;
-  margin-left: 1rem;
-  margin-bottom: .2rem; }
-
 .general__final-img {
   width: auto; }
 
@@ -327,7 +327,7 @@ a {
   padding-bottom: 4.3rem; }
 
 .form {
-  margin: 4rem auto;
+  margin: 2rem auto 4rem auto;
   padding: 1rem 3rem;
   border: 1px solid #3b89ad;
   width: 90%;
