@@ -310,7 +310,7 @@ a {
   padding-bottom: 4.3rem; }
 
 .form {
-  margin: auto;
+  margin: 4rem auto;
   padding: 1rem 3rem;
   border: 1px solid #000;
   width: 90%;
@@ -326,7 +326,6 @@ a {
     margin-top: 3rem;
     display: grid; }
   .form__grupo {
-    position: relative;
     color: #000;
     margin-bottom: 1rem; }
   .form__input {
