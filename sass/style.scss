@@ -139,7 +139,7 @@ a {
         color: $color-oscuro;
         font-size: 16px;
         text-align: justify;
-        margin: 1em 8em 2em 8em;
+        margin: 1em 16em 2em 16em;
         padding-top: 2rem;
         h1 {
             @extend .cambio-color;
@@ -159,18 +159,18 @@ a {
         p {
             text-align: justify;
         }
+    }
 
-        .general__img {
-            float: left;
-            padding-right: 1rem;
-        }
+    &__img {
+        float: left;
+        padding-right: 1rem;
+    }
 
-        &__img {
-            height: 20em;
-            width: 15em;
-            margin-right: 2em;
-            margin-bottom: .5em;
-        }
+    &__img {
+        height: 20em;
+        width: 15em;
+        margin-right: 2em;
+        margin-bottom: .5em;
     }
 
     &__img2 {
@@ -178,6 +178,10 @@ a {
         float:right;
         margin-left: 1rem;
         margin-bottom: .2rem;
+    }
+
+    &__final-img {
+        width: auto;
     }
 }
 

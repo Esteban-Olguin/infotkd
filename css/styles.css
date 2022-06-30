@@ -286,7 +286,7 @@ a {
   color: #000;
   font-size: 16px;
   text-align: justify;
-  margin: 1em 8em 2em 8em;
+  margin: 1em 16em 2em 16em;
   padding-top: 2rem; }
   .general__main h1 {
     color: #fff;
@@ -300,20 +300,25 @@ a {
     margin: 1rem 0; }
   .general__main p {
     text-align: justify; }
-  .general__main .general__img {
-    float: left;
-    padding-right: 1rem; }
-  .general__main__img {
-    height: 20em;
-    width: 15em;
-    margin-right: 2em;
-    margin-bottom: .5em; }
+
+.general__img {
+  float: left;
+  padding-right: 1rem; }
+
+.general__img {
+  height: 20em;
+  width: 15em;
+  margin-right: 2em;
+  margin-bottom: .5em; }
 
 .general__img2 {
   display: flex;
   float: right;
   margin-left: 1rem;
   margin-bottom: .2rem; }
+
+.general__final-img {
+  width: auto; }
 
 /* INGRESAR */
 .ingresar {
